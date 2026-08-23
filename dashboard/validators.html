@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolBeat — Validators</title>
+<style>
+  :root {
+    --bg:#07090f; --panel:#0e1420; --panel2:#141c2b; --border:#1d2941;
+    --text:#dbe4f3; --muted:#71809b; --green:#14f195; --purple:#9945ff;
+    --blue:#5aa2ff; --red:#ff5c5c; --gold:#ffc94d;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:64px; }
+  body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif; font-size:14px; }
+  a { color:var(--blue); text-decoration:none; }
+  .wrap { padding:18px 22px; max-width:1500px; margin:0 auto; }
+
+  nav { position:sticky; top:0; z-index:50; background:rgba(7,9,15,.92); backdrop-filter:blur(8px);
+        border-bottom:1px solid var(--border); padding:10px 22px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  nav h1 { font-size:17px; } nav h1 b { color:var(--green); }
+  nav .links { display:flex; gap:2px; flex-wrap:wrap; }
+  nav .links a { color:var(--muted); font-size:12px; font-weight:600; padding:5px 10px; border-radius:8px; }
+  nav .links a:hover, nav .links a.on { color:var(--text); background:var(--panel2); }
+  .spacer { flex:1; }
+  #generated { color:var(--muted); font-size:11px; }
+
+  section { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; margin-bottom:16px; }
+  h2 { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.8px; margin-bottom:12px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+  .i { cursor:help; opacity:.55; font-style:normal; font-size:11px; border:1px solid var(--muted); border-radius:50%; padding:0 5px; }
+  .i:hover { opacity:1; }
+
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin-bottom:16px; }
+  .kpi { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:11px 12px; }
+  .kpi .l { color:var(--muted); font-size:10.5px; text-transform:uppercase; letter-spacing:.4px; display:flex; align-items:center; gap:4px; }
+  .kpi .v { font-size:19px; font-weight:700; margin-top:4px; white-space:nowrap; }
+  .kpi .d { font-size:10.5px; margin-top:2px; color:var(--muted); }
+
+  .charts { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px; }
+  @media(max-width:900px){ .charts{grid-template-columns:1fr;} }
+  .chart-box { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:10px; position:relative; }
+  svg { width:100%; height:150px; display:block; }
+  .sub { color:var(--muted); font-size:11px; margin-top:4px; }
+
+  input[type=text], select { background:var(--panel2); border:1px solid var(--border); color:var(--text); border-radius:8px; padding:6px 10px; font-size:12.5px; outline:none; }
+  button.act { background:var(--green); color:#041008; border:none; border-radius:8px; padding:6px 14px; font-weight:700; cursor:pointer; font-size:12px; }
+  .filters { display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; align-items:center; }
+
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  thead th { position:sticky; top:56px; background:#0b101b; z-index:5;
+             text-align:right; color:var(--muted); padding:9px 10px; border-bottom:1px solid var(--border);
+             font-weight:600; cursor:pointer; user-select:none; white-space:nowrap; }
+  thead th:first-child { text-align:center; }
+  thead th.left { text-align:left; }
+  thead th:hover { color:var(--text); }
+  tbody td { padding:9px 10px; border-bottom:1px solid #121a29; white-space:nowrap; vertical-align:middle; }
+  tbody tr:hover { background:#101827; }
+  tbody tr.delinq-row { background:rgba(255,92,92,.04); }
+  .num { text-align:right !important; font-variant-numeric:tabular-nums; }
+  td.pk span { font-family:Consolas,monospace; font-size:12px; background:var(--panel2);
+               border:1px solid var(--border); border-radius:6px; padding:3px 8px; cursor:pointer; }
+  td.pk span:hover { border-color:var(--blue); }
+  .rank { color:var(--muted); font-weight:800; font-size:13px; }
+  .sharebar { position:relative; background:#101a2c; border-radius:3px; height:6px; width:100%; min-width:90px; overflow:hidden; }
+  .sharebar i { position:absolute; inset:0 auto 0 0; background:linear-gradient(90deg,var(--purple),var(--green)); border-radius:3px; transition:width .3s; }
+  .cbadge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:11px; font-weight:700; }
+  .c0 { background:rgba(20,241,149,.13); color:var(--green); }
+  .clow { background:var(--panel2); color:var(--muted); border:1px solid var(--border); }
+  .cmid { background:rgba(255,201,77,.12); color:var(--gold); }
+  .cmax { background:rgba(153,69,255,.16); color:var(--purple); }
+  .stat-pill { display:inline-block; padding:3px 11px; border-radius:999px; font-size:10.5px; font-weight:800; letter-spacing:.4px; }
+  .st-active { background:rgba(20,241,149,.1); color:var(--green); }
+  .st-delinq { background:rgba(255,92,92,.14); color:var(--red); }
+  footer { color:var(--muted); font-size:11px; text-align:center; padding:8px 0 24px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <h1>⚡ Sol<b>Beat</b></h1>
+  <div class="links">
+    <a href="./">← Overview</a>
+    <a href="validators.html" class="on">Validators</a>
+    <a href="#set">Tabella</a>
+    <a href="#charts">Analisi</a>
+  </div>
+  <div class="spacer"></div>
+  <span id="generated"></span>
+</nav>
+
+<div class="wrap">
+
+  <section id="set">
+    <h2>🗳️ Validator set <span class="i" title="Dati da getVoteAccounts (RPC Solana). Clicca le intestazioni per ordinare, clicca una pubkey per copiarla.">ⓘ</span></h2>
+    <div class="kpis" id="vkpis"></div>
+
+    <div class="filters">
+      <input type="text" id="vSearch" placeholder="cerca pubkey o nome…" style="min-width:220px">
+      <select id="vStatus">
+        <option value="all">tutti gli stati</option>
+        <option value="active">solo attivi</option>
+        <option value="delinquent">solo delinquent ⚠</option>
+      </select>
+      <select id="vComm">
+        <option value="all">qualsiasi commissione</option>
+        <option value="0">commissione 0%</option>
+        <option value="low">commissione 1–9%</option>
+        <option value="high">commissione ≥10%</option>
+        <option value="max">commissione 100% (privati)</option>
+      </select>
+      <button class="act" onclick="exportCsv()">⬇ Export CSV</button>
+      <span class="sub" id="rowInfo" style="margin-left:auto"></span>
+    </div>
+
+    <table>
+      <thead><tr>
+        <th data-s="idx" style="text-align:center">#</th>
+        <th data-s="name" class="left">Validator ⇅<span class="i" title="Primi caratteri della nodePubkey. Clicca per copiare la votePubkey completa.">ⓘ</span></th>
+        <th data-s="activated_stake_sol" class="num">Stake (SOL) ⇅<span class="i" title="SOL delegati e attivati su questo validatore.">ⓘ</span></th>
+        <th data-s="stake_share_pct" class="num">% rete ⇅<span class="i" title="Quota sullo stake attivo totale della rete.">ⓘ</span></th>
+        <th data-s="stake_share_pct" class="left" style="min-width:150px">Confronto vs top ⇅<span class="i" title="Barra proporzionale rispetto al validatore con più stake.">ⓘ</span></th>
+        <th data-s="commission" class="num">Commissione ⇅<span class="i" title="% delle ricompense trattenuta dal validatore prima di pagare i delegatori.">ⓘ</span></th>
+        <th data-s="epoch_credit_current" class="num">Credits epoch ⇅<span class="i" title="Crediti di voto guadagnati nell'epoch corrente: affidabilità e presenza.">ⓘ</span></th>
+        <th data-s="delinquent" class="num">Stato ⇅<span class="i" title="Delinquent = il validatore non vota correttamente.">ⓘ</span></th>
+      </tr></thead>
+      <tbody id="validators"></tbody>
+    </table>
+    <div class="sub" id="commissionDist" style="margin-top:10px"></div>
+  </section>
+
+  <div class="charts" id="charts">
+    <section style="margin:0">
+      <h2>Cumulative stake — top 25 <span class="i" title="Quanto dello stake attivo controllano i primi N validatori. Le linee segnano la soglia di supermajority (2/3) e la soglia del Nakamoto (1/3).">ⓘ</span></h2>
+      <svg id="chCum"></svg><div class="sub" id="cumInfo"></div>
+    </section>
+    <section style="margin:0">
+      <h2>Commission distribution <span class="i" title="Numero di validatori attivi per fascia di commissione (set completo, non solo top 25).">ⓘ</span></h2>
+      <svg id="chComm"></svg><div class="sub" id="commInfo"></div>
+    </section>
+  </div>
+
+  <footer>SolBeat · pure Python stdlib · dati live da RPC Solana · <a href="./">← torna all'overview</a></footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const fmtN = (v,d=0) => v == null ? '—' : Number(v).toLocaleString('en-US',{maximumFractionDigits:d});
+const fmtCompact = n => n==null?'—': n>=1e6?(n/1e6).toFixed(2)+'M': n>=1e3?(n/1e3).toFixed(1)+'k': fmtN(n);
+const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+let payload=null, sortKey='activated_stake_sol', sortDir=-1;
+
+function commBadge(c){
+  if(c==null) return '<span class="cbadge clow">—</span>';
+  if(c===0) return '<span class="cbadge c0" title="Non trattiene nulla: massima convenienza per i delegatori">0%</span>';
+  if(c>=100) return '<span class="cbadge cmax" title="Trattiene tutto: non accetta delegazioni esterne (tipicamente exchange o operatori privati)">100%</span>';
+  if(c>=10) return `<span class="cbadge cmid">${c}%</span>`;
+  return `<span class="cbadge clow">${c}%</span>`;
+}
+
+function renderKpis(){
+  const vs=(payload.derived||{}).validators_summary||{};
+  const m=payload.metrics||{};
+  const cards=[
+    ['Attivi', fmtN(vs.active), 'validatori che votano regolarmente'],
+    ['Delinquent', `${fmtN(vs.delinquent)} (${(vs.delinquent_stake_pct??0).toFixed(2)}%)`, 'non votano — rischio rendimento'],
+    ['Stake attivo', fmtCompact(vs.activated_stake_sol)+' SOL', `≈ ${((vs.activated_stake_sol||0)*(m.sol_price_usd||0)/1e9).toFixed(1)}B$`],
+    ['Nakamoto coeff.', fmtN(vs.nakamoto_coefficient), 'validatori per ≥34% dello stake'],
+    ['Top-10 stake', (vs.top10_stake_pct??0).toFixed(1)+'%', 'concentrazione dei primi dieci'],
+    ['Commissione mediana', (vs.median_commission??'—')+'%', 'sul set completo degli attivi'],
+  ];
+  $('vkpis').innerHTML=cards.map(([l,v,d])=>
+    `<div class="kpi"><div class="l">${l}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join('');
+}
+
+function filteredRows(){
+  const q=($('vSearch').value||'').toLowerCase();
+  const st=$('vStatus').value, cm=$('vComm').value;
+  let rows=[...(payload.validators||[])].map((r,i)=>({...r,idx:i+1}));
+  if(q) rows=rows.filter(r=>(r.name+' '+(r.vote_pubkey||'')).toLowerCase().includes(q));
+  if(st!=='all') rows=rows.filter(r=>st==='delinquent'?r.delinquent:!r.delinquent);
+  if(cm==='0') rows=rows.filter(r=>r.commission===0);
+  else if(cm==='low') rows=rows.filter(r=>r.commission>=1&&r.commission<=9);
+  else if(cm==='high') rows=rows.filter(r=>r.commission>=10&&r.commission<100);
+  else if(cm==='max') rows=rows.filter(r=>r.commission>=100);
+  rows.sort((a,b)=>{
+    let va=a[sortKey], vb=b[sortKey];
+    if(sortKey==='name'){return String(va||'').localeCompare(String(vb||''))*sortDir;}
+    if(sortKey==='delinquent'){va=va?1:0;vb=vb?1:0;}
+    return ((va??-Infinity)-(vb??-Infinity))*sortDir;
+  });
+  return rows;
+}
+
+function renderTable(){
+  const rows=filteredRows();
+  const vs=(payload.derived||{}).validators_summary||{};
+  const totalStake=vs.activated_stake_sol||1;
+  const maxCredit=Math.max(1,...(payload.validators||[]).map(v=>v.epoch_credit_current||0));
+  const maxShare=Math.max(1,...(payload.validators||[]).map(v=>v.stake_share_pct||0));
+  const medals={1:'🥇',2:'🥈',3:'🥉'};
+
+  $('validators').innerHTML=rows.map(v=>{
+    const netPct=v.activated_stake_sol/totalStake*100;
+    const sw=Math.min(100,(v.stake_share_pct||0)/maxShare*100);
+    const cw=Math.min(100,(v.epoch_credit_current||0)/maxCredit*100);
+    return `
+    <tr class="${v.delinquent?'delinq-row':''}">
+      <td style="text-align:center"><span class="rank">${medals[v.idx]||v.idx}</span></td>
+      <td class="pk"><span title="${esc(v.vote_pubkey||'')} — clicca per copiare"
+            onclick="navigator.clipboard.writeText('${esc(v.vote_pubkey||'')}');this.style.borderColor='#14f195';setTimeout(()=>this.style.borderColor='',800)">${esc(v.name)}…</span></td>
+      <td class="num" title="${fmtN(v.activated_stake_sol)} SOL"><b>${fmtCompact(v.activated_stake_sol)}</b></td>
+      <td class="num" style="color:var(--muted)">${netPct.toFixed(2)}%</td>
+      <td><div style="display:flex;align-items:center;gap:9px">
+            <span style="font-size:11px;color:var(--muted);min-width:42px;text-align:right">${(v.stake_share_pct??0).toFixed(1)}%</span>
+            <div class="sharebar"><i style="width:${sw.toFixed(1)}%"></i></div></div></td>
+      <td class="num">${commBadge(v.commission)}</td>
+      <td class="num"><div style="display:flex;align-items:center;gap:9px">
+            <span style="font-size:11px;color:var(--muted);min-width:44px;text-align:right">${fmtCompact(v.epoch_credit_current)}</span>
+            <div class="sharebar" style="height:5px"><i style="width:${cw.toFixed(0)}%;background:var(--blue)"></i></div></div></td>
+      <td class="num"><span class="stat-pill ${v.delinquent?'st-delinq':'st-active'}">${v.delinquent?'⚠ DELINQ':'ACTIVE'}</span></td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="8" style="padding:20px;text-align:center;color:var(--muted)">nessun risultato</td></tr>';
+
+  $('rowInfo').textContent=`${rows.length} validatori mostrati (su ${payload.validators.length} in lista)`;
+  if(vs.commission_0_pct!=null)
+    $('commissionDist').textContent=`Rete completa · ${fmtN(vs.active)} attivi: commissioni 0% = ${vs.commission_0_pct}% · 1–9% = ${vs.commission_low_pct}% · ≥10% = ${vs.commission_high_pct}% · mediana ${vs.median_commission}%`;
+}
+
+function drawCumulative(){
+  const rows=[...(payload.validators||[])].filter(v=>!v.delinquent)
+    .map(v=>v.activated_stake_sol).slice(0,25);
+  const total=(payload.derived||{}).validators_summary?.activated_stake_sol||1;
+  const W=600,H=150,P=28;
+  let cum=0; const pts=[];
+  rows.forEach((s,i)=>{
+    cum+=s;
+    const x=P+(rows.length>1? i/(rows.length-1)*(W-2*P) : (W-2*P));
+    const y=H-P-(cum/total)*(H-2*P);
+    pts.push([x,y]);
+  });
+  svgLine('chCum', pts,
+    {yLines:[1/3,2/3], yLabels:['34%','67%'], infoEl:'cumInfo',
+     infoText:`i primi ${rows.length} controllano ${(cum/total*100).toFixed(1)}% dello stake attivo`,
+     area:true});
+}
+
+function svgLine(id, pts, opt){
+  const svg=$(id); if(!svg) return;
+  const W=600,H=150,P=opt.P||28;
+  if(pts.length<2){svg.innerHTML='';return;}
+  let d=`M ${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
+  for(let i=1;i<pts.length;i++) d+=` L ${pts[i][0].toFixed(1)} ${pts[i][1].toFixed(1)}`;
+  let guides='';
+  (opt.yLines||[]).forEach((f,i)=>{
+    const y=(H-P)-f*(H-2*P);
+    guides+=`<line x1="${P}" y1="${y}" x2="${W-P}" y2="${y}" stroke="#26304a" stroke-dasharray="4 4"/>`+
+            `<text x="${W-P+3}" y="${y+3}" fill="#71809b" font-size="9">${opt.yLabels[i]}</text>`;
+  });
+  const area=d+` L ${pts[pts.length-1][0].toFixed(1)} ${H-P} L ${pts[0][0].toFixed(1)} ${H-P} Z`;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  svg.innerHTML=`<defs><linearGradient id="gg-${id}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9945ff" stop-opacity=".3"/><stop offset="100%" stop-color="#9945ff" stop-opacity="0"/></linearGradient></defs>
+    ${guides}
+    ${opt.area?`<path d="${area}" fill="url(#gg-${id})"/>`:''}
+    <path d="${d}" fill="none" stroke="#9945ff" stroke-width="1.8"/>
+    <text x="${P}" y="${H-4}" fill="#71809b" font-size="9">#1</text>
+    <text x="${W-P-30}" y="${H-4}" fill="#71809b" font-size="9">#${pts.length}</text>`;
+  if(opt.infoEl&&opt.infoText) $(opt.infoEl).textContent=opt.infoText;
+}
+
+function drawCommDist(){
+  const vs=(payload.derived||{}).validators_summary||{};
+  if(vs.commission_0_pct==null){$('chComm').innerHTML='';return;}
+  const buckets=[
+    ['0%', vs.commission_0_pct],
+    ['1–9%', vs.commission_low_pct],
+    ['≥10%', vs.commission_high_pct],
+  ];
+  const W=600,H=150,P=30,bw=(W-2*P)/buckets.length*0.55;
+  const max=Math.max(...buckets.map(b=>b[1]),1);
+  let bars='';
+  buckets.forEach(([lbl,val],i)=>{
+    const x=P+(i+0.5)*((W-2*P)/buckets.length)-bw/2;
+    const bh=val/max*(H-2*P-18);
+    const colors=['#14f195','#5aa2ff','#ffc94d'];
+    bars+=`<rect x="${x}" y="${H-P-bh}" width="${bw}" height="${bh}" rx="4" fill="${colors[i]}"/>
+      <text x="${x+bw/2}" y="${H-P-bh-5}" fill="#dbe4f3" font-size="11" text-anchor="middle">${val}%</text>
+      <text x="${x+bw/2}" y="${H-P+12}" fill="#71809b" font-size="10" text-anchor="middle">${lbl}</text>`;
+  });
+  $('chComm').setAttribute('viewBox',`0 0 ${W} ${H}`);
+  $('chComm').innerHTML=bars;
+  $('commInfo').textContent=`Fasce di commissione sui ${fmtN(vs.active)} validatori attivi (mediana ${vs.median_commission}%)`;
+}
+
+function exportCsv(){
+  const rows=filteredRows();
+  const head='rank,node_pubkey_prefix,vote_pubkey,stake_sol,share_vs_top_pct,network_share_pct,commission,epoch_credits,delinquent';
+  const vs=(payload.derived||{}).validators_summary||{};
+  const lines=rows.map(v=>[v.idx,v.name,v.vote_pubkey,v.activated_stake_sol,v.stake_share_pct,
+    (v.activated_stake_sol/(vs.activated_stake_sol||1)*100).toFixed(3),v.commission,
+    v.epoch_credit_current??'',v.delinquent].join(','));
+  const blob=new Blob([head+'\n'+lines.join('\n')],{type:'text/csv'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob); a.download='solbeat_validators.csv'; a.click();
+}
+
+document.querySelectorAll('th[data-s]').forEach(th=>th.onclick=()=>{
+  const k=th.dataset.s;
+  sortDir=(k===sortKey)?-sortDir:(k==='name'?1:-1);
+  sortKey=k; if(payload) renderTable();
+});
+['vSearch','vStatus','vComm'].forEach(id=>{ $(id).oninput=()=>payload&&renderTable(); $(id).onchange=()=>payload&&renderTable(); });
+
+async function load(){
+  try{
+    payload=await fetch('/api/report').then(r=>r.json());
+    $('generated').textContent='upd '+new Date(payload.generated_at*1000).toLocaleTimeString('it-IT');
+    renderKpis(); renderTable(); drawCumulative(); drawCommDist();
+  }catch{}
+}
+load();
+setInterval(load,60000);
+</script>
+</body>
+</html>

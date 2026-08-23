@@ -1,0 +1,2299 @@
+{
+  "schema_version": "1.1",
+  "generated_at": 1787411743.1783566,
+  "metrics": {
+    "sol_price_usd": 93.01,
+    "sol_price_change_24h_pct": 1.2618777442305842,
+    "sol_market_cap_usd": 54272931512.687706,
+    "binance_sol_price_usd": 92.98,
+    "cg_bin_divergence_pct": 0.032,
+    "defi_tvl_usd": 5529324703.340835,
+    "stablecoin_supply_usd": 16342279469.84,
+    "dex_volume_24h_usd": 3600948276.22,
+    "fees_24h_usd": 13332529.879999997,
+    "rwa_tvl_usd": 9632340751.746536,
+    "slot": 440949310,
+    "epoch": 1020,
+    "epoch_progress_pct": 71.6,
+    "block_height": 418998649,
+    "slots_in_epoch": 432000,
+    "tps_total": 3827.2,
+    "tps_non_vote": 1971.0,
+    "avg_slot_ms": 366.9,
+    "sol_total_supply": 632639271.88,
+    "sol_circulating_supply": 583176942.52,
+    "rpc_health": 1.0,
+    "slot_source_divergence": 19,
+    "jupiter_tx_lag_slots": 0,
+    "jupiter_signatures_per_min": 6000.0,
+    "validators_active": 686,
+    "validators_delinquent": 9,
+    "delinquent_stake_pct": 0.02,
+    "nakamoto_coefficient": 19,
+    "top10_stake_pct": 24.33,
+    "commission_0_pct": 37.2,
+    "commission_high_pct": 13.7,
+    "epoch_slots_remaining": 122690,
+    "epoch_eta_hours": 12.5,
+    "collected_at": 1787411740.0661998,
+    "fee_sample_txs": 6953,
+    "fee_sample_blocks": 6,
+    "est_daily_active_addresses": 3176384,
+    "median_tx_fee_sol": 5e-06,
+    "mean_tx_fee_sol": 8.976e-06
+  },
+  "validators": [
+    {
+      "name": "Fd7btgySsrjuo25C",
+      "vote_pubkey": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
+      "activated_stake_sol": 17066372,
+      "commission": 7,
+      "epoch_credit_current": 4940570,
+      "delinquent": false,
+      "stake_share_pct": 100.0
+    },
+    {
+      "name": "HEL1USMZKAL2odpN",
+      "vote_pubkey": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
+      "activated_stake_sol": 16054078,
+      "commission": 0,
+      "epoch_credit_current": 4940577,
+      "delinquent": false,
+      "stake_share_pct": 94.07
+    },
+    {
+      "name": "DRpbCBMxVnDK7maP",
+      "vote_pubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
+      "activated_stake_sol": 12175413,
+      "commission": 0,
+      "epoch_credit_current": 4940507,
+      "delinquent": false,
+      "stake_share_pct": 71.34
+    },
+    {
+      "name": "JUPiTERrZqgf1jUy",
+      "vote_pubkey": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
+      "activated_stake_sol": 11782032,
+      "commission": 5,
+      "epoch_credit_current": 4943074,
+      "delinquent": false,
+      "stake_share_pct": 69.04
+    },
+    {
+      "name": "C8Bey3LKVJHVqN6x",
+      "vote_pubkey": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
+      "activated_stake_sol": 9178661,
+      "commission": 7,
+      "epoch_credit_current": 4940558,
+      "delinquent": false,
+      "stake_share_pct": 53.78
+    },
+    {
+      "name": "CAo1dCGYrB6NhHh5",
+      "vote_pubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
+      "activated_stake_sol": 8917577,
+      "commission": 10,
+      "epoch_credit_current": 4936734,
+      "delinquent": false,
+      "stake_share_pct": 52.25
+    },
+    {
+      "name": "E1r4Psq84tHfQ6aP",
+      "vote_pubkey": "8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD",
+      "activated_stake_sol": 8402660,
+      "commission": 0,
+      "epoch_credit_current": 4940577,
+      "delinquent": false,
+      "stake_share_pct": 49.24
+    },
+    {
+      "name": "EvnRmnMrd69kFdbL",
+      "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+      "activated_stake_sol": 7964352,
+      "commission": 7,
+      "epoch_credit_current": 4941104,
+      "delinquent": false,
+      "stake_share_pct": 46.67
+    },
+    {
+      "name": "9eGrDohdNTAo61DR",
+      "vote_pubkey": "CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB",
+      "activated_stake_sol": 7357821,
+      "commission": 5,
+      "epoch_credit_current": 4939197,
+      "delinquent": false,
+      "stake_share_pct": 43.11
+    },
+    {
+      "name": "Awes4Tr6TX8JDzEh",
+      "vote_pubkey": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
+      "activated_stake_sol": 6547243,
+      "commission": 0,
+      "epoch_credit_current": 4939257,
+      "delinquent": false,
+      "stake_share_pct": 38.36
+    },
+    {
+      "name": "9jxgosAfHgHzwnxs",
+      "vote_pubkey": "HZKopZYvv8v6un2H6KUNVQCnK5zM9emKKezvqhTBSpEc",
+      "activated_stake_sol": 6122617,
+      "commission": 100,
+      "epoch_credit_current": 4940315,
+      "delinquent": false,
+      "stake_share_pct": 35.88
+    },
+    {
+      "name": "JD549HsbJHeEKKUr",
+      "vote_pubkey": "3JD3jMmnR6g88qff2WZ3cMHJRjJMUk9yVZtmYTYeFrXf",
+      "activated_stake_sol": 6003737,
+      "commission": 0,
+      "epoch_credit_current": 4933228,
+      "delinquent": false,
+      "stake_share_pct": 35.18
+    },
+    {
+      "name": "5pPRHniefFjkiaAr",
+      "vote_pubkey": "DdCNGDpP7qMgoAy6paFzhhak2EeyCZcgjH7ak5u5v28m",
+      "activated_stake_sol": 5958065,
+      "commission": 5,
+      "epoch_credit_current": 4938441,
+      "delinquent": false,
+      "stake_share_pct": 34.91
+    },
+    {
+      "name": "5Cchr1XGEg7dbBXB",
+      "vote_pubkey": "GHViLgbrJdZDPb6sphRbeuPNM9cmjsFuGWzrTF1sKF5n",
+      "activated_stake_sol": 5773480,
+      "commission": 100,
+      "epoch_credit_current": 4940573,
+      "delinquent": false,
+      "stake_share_pct": 33.83
+    },
+    {
+      "name": "9rkJMARqK6VBkcxG",
+      "vote_pubkey": "HimWQUK61d9wxhw7EYu9jUje7xQiDs4jKexaTSvuCmXE",
+      "activated_stake_sol": 4663306,
+      "commission": 8,
+      "epoch_credit_current": 4940574,
+      "delinquent": false,
+      "stake_share_pct": 27.32
+    },
+    {
+      "name": "GnC339vkyXRm1jRX",
+      "vote_pubkey": "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk",
+      "activated_stake_sol": 4585073,
+      "commission": 7,
+      "epoch_credit_current": 4939725,
+      "delinquent": false,
+      "stake_share_pct": 26.87
+    },
+    {
+      "name": "FBKFWadXZJahGtFi",
+      "vote_pubkey": "AZoCYB4VgoM9DR9f1ZFcBn8xPSbtbqoxZnKJR7tkvEoX",
+      "activated_stake_sol": 4080687,
+      "commission": 100,
+      "epoch_credit_current": 4940564,
+      "delinquent": false,
+      "stake_share_pct": 23.91
+    },
+    {
+      "name": "EkvdKhULbMFqjKBK",
+      "vote_pubkey": "3ZYJxzCeweSoh2Jj7oCgencFs9y27iKmXJeqYapje1cj",
+      "activated_stake_sol": 4062655,
+      "commission": 100,
+      "epoch_credit_current": 4940552,
+      "delinquent": false,
+      "stake_share_pct": 23.81
+    },
+    {
+      "name": "BtsmiEEvnSuUnKxq",
+      "vote_pubkey": "G9x1mqewTeVnXLmv3FamYD5tq1AdS395RHH3MLQPj6TY",
+      "activated_stake_sol": 4033314,
+      "commission": 100,
+      "epoch_credit_current": 4940560,
+      "delinquent": false,
+      "stake_share_pct": 23.63
+    },
+    {
+      "name": "5ZqveVffQPiUbkjB",
+      "vote_pubkey": "EcEowA4GKDsdVBF9PNAZa6c9M4WgYG8y4GnpZSUaqioS",
+      "activated_stake_sol": 3985947,
+      "commission": 100,
+      "epoch_credit_current": 4940508,
+      "delinquent": false,
+      "stake_share_pct": 23.36
+    },
+    {
+      "name": "Hz5aLvpKScNWoe9Y",
+      "vote_pubkey": "H74qox1GASBWd94FWMyy6GVAbRVLf9SAMgbJ1tzSUAst",
+      "activated_stake_sol": 3950153,
+      "commission": 100,
+      "epoch_credit_current": 4940563,
+      "delinquent": false,
+      "stake_share_pct": 23.15
+    },
+    {
+      "name": "A1vqhA2fS6K7CvHs",
+      "vote_pubkey": "HkFuE9NJahP7uA8RooXtp64UQb7XNUMVisWsJTgx3far",
+      "activated_stake_sol": 3912709,
+      "commission": 100,
+      "epoch_credit_current": 4940559,
+      "delinquent": false,
+      "stake_share_pct": 22.93
+    },
+    {
+      "name": "J6etcxDdYjPHrtyv",
+      "vote_pubkey": "8Pep3GmYiijRALqrMKpez92cxvF4YPTzoZg83uXh14pW",
+      "activated_stake_sol": 3897335,
+      "commission": 0,
+      "epoch_credit_current": 4940534,
+      "delinquent": false,
+      "stake_share_pct": 22.84
+    },
+    {
+      "name": "9UM8wQ8F5oMiRcP5",
+      "vote_pubkey": "9jToNMWCLW1GeoLGPZNvEfuXE4AUwiRsrC1HMGmh3PTu",
+      "activated_stake_sol": 3725918,
+      "commission": 2,
+      "epoch_credit_current": 4940553,
+      "delinquent": false,
+      "stake_share_pct": 21.83
+    },
+    {
+      "name": "shftkxnsXmqAkmLg",
+      "vote_pubkey": "shft7Fry1js37Hm9wq4dfwcZSp2DyKszeWMvEpjYCQ1",
+      "activated_stake_sol": 3613733,
+      "commission": 0,
+      "epoch_credit_current": 4943089,
+      "delinquent": false,
+      "stake_share_pct": 21.17
+    }
+  ],
+  "epoch": {
+    "number": 1020,
+    "progress_pct": 71.6,
+    "eta_hours": 12.5,
+    "slots_remaining": 122690
+  },
+  "derived": {
+    "node_version": "?.?.?",
+    "validators_summary": {
+      "active": 686,
+      "delinquent": 9,
+      "activated_stake_sol": 433485334,
+      "delinquent_stake_pct": 0.02,
+      "median_commission": 5,
+      "nakamoto_coefficient": 19,
+      "top10_stake_pct": 24.33,
+      "commission_0_pct": 37.2,
+      "commission_low_pct": 49.1,
+      "commission_high_pct": 13.7
+    }
+  },
+  "alerts": [
+    {
+      "ts": 1787407141.5781498,
+      "level": "warn",
+      "metric": "stablecoin_supply_usd",
+      "message": "Stablecoin supply moved -94.7% between last two samples (308,196,096,547 -> 16,342,279,470)"
+    }
+  ],
+  "news": [
+    {
+      "ts": 1787406865.3126156,
+      "source": "Agave Releases",
+      "title": "Release v4.2.1",
+      "link": "https://github.com/anza-xyz/agave/releases/tag/v4.2.1",
+      "summary": "<h2>What's Changed</h2>\n<ul>\n<li>v4.2: gossip: wrap epoch slots index after 254 (backport of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5132815921\" data-permission-text=\"Title is private\" data-url=\"https://github.com/anza-xyz/agave/issues/14566\" data-hovercar"
+    },
+    {
+      "ts": 1787406865.3126156,
+      "source": "Agave Releases",
+      "title": "Release v4.2.0",
+      "link": "https://github.com/anza-xyz/agave/releases/tag/v4.2.0",
+      "summary": "<p>This a stable release suitable for Testnet, Devnet and Mainnet Beta.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.2/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.2/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<li>v4.2: runtime: do not rewrite inactive stakes (backport "
+    },
+    {
+      "ts": 1787406865.3126156,
+      "source": "Agave Releases",
+      "title": "Release v4.3.0-alpha.3",
+      "link": "https://github.com/anza-xyz/agave/releases/tag/v4.3.0-alpha.3",
+      "summary": "<p>This is a pre-release for testing only. Do not deploy to mainnet, testnet, or any production host.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel\">https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel</a></p>"
+    },
+    {
+      "ts": 1787406865.3126156,
+      "source": "Agave Releases",
+      "title": "Release v4.2.0-rc.1",
+      "link": "https://github.com/anza-xyz/agave/releases/tag/v4.2.0-rc.1",
+      "summary": "<p>This is Mainnet-beta Upgrade Candidate release recommended for 10% adoption.<br>\nIt is also recommended for Testnet and Devnet.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.2/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.2/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<"
+    },
+    {
+      "ts": 1787406865.3126156,
+      "source": "Agave Releases",
+      "title": "Release v4.2.0-rc.0",
+      "link": "https://github.com/anza-xyz/agave/releases/tag/v4.2.0-rc.0",
+      "summary": "<p>This is Mainnet-beta Upgrade Candidate release recommended for 10% adoption.<br>\nIt is also recommended for Testnet and Devnet.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.2/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.2/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<"
+    },
+    {
+      "ts": 1787406865.3126156,
+      "source": "Agave Releases",
+      "title": "Release v4.3.0-alpha.2",
+      "link": "https://github.com/anza-xyz/agave/releases/tag/v4.3.0-alpha.2",
+      "summary": "<p>This is a pre-release for testing only. Do not deploy to mainnet, testnet, or any production host.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel\">https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel</a></p>"
+    },
+    {
+      "ts": 1787406865.3126156,
+      "source": "Cointelegraph",
+      "title": "Solana cuts blockchain slot time to 350 milliseconds",
+      "link": "https://cointelegraph.com/news/solana-cuts-blockchain-slot-time-350-milliseconds",
+      "summary": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/hi-china-solana-is-ready-new-1.jpg\" alt=\"Solana cuts blockchain slot time to 350 milliseconds\" class=\"type:primaryImage\"></p><p>Solana reduced its slot time for the first time since"
+    },
+    {
+      "ts": 1787406865.3126156,
+      "source": "CoinDesk",
+      "title": "Bitcoin, ether and solana climb as another $1 billion shorts get wiped out",
+      "link": "https://www.coindesk.com/markets/2026/08/21/bitcoin-ether-and-solana-climb-as-another-usd1-billion-shorts-get-wiped-out",
+      "summary": "The two-day short liquidation total has surpassed $4 billion, with Thursday's figure setting a record dating back to 2021."
+    }
+  ],
+  "upgrades": [
+    {
+      "name": "Alpenglow",
+      "status": "research/rollout",
+      "note": "New consensus protocol replacing TowerBFT+PoH, target ~100-150ms finality.",
+      "link": "https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana"
+    },
+    {
+      "name": "SIMD-525",
+      "status": "proposed",
+      "note": "Multiple concurrent leaders proposal to reduce block time to ~400ms and improve confirmation latency.",
+      "link": "https://github.com/solana-foundation/solana-improvement-documents"
+    },
+    {
+      "name": "Firedancer",
+      "status": "testnet/staged rollout",
+      "note": "Independent C++ validator client by Jump Crypto for client diversity and throughput.",
+      "link": "https://github.com/firedancer-io/firedancer"
+    },
+    {
+      "name": "Agave v2.x",
+      "status": "mainnet",
+      "note": "Anza's maintained validator client; ongoing scheduling/priority-fee market improvements.",
+      "link": "https://github.com/anza-xyz/agave"
+    }
+  ],
+  "sources": [
+    {
+      "name": "coingecko",
+      "last_ok": 1787411732.8563662,
+      "status": "ok",
+      "items": 5
+    },
+    {
+      "name": "rpc",
+      "last_ok": 1787411740.0661998,
+      "status": "ok",
+      "items": 24
+    },
+    {
+      "name": "news",
+      "last_ok": 1787411733.575633,
+      "status": "ok",
+      "items": 8
+    },
+    {
+      "name": "defillama",
+      "last_ok": 1787411735.543993,
+      "status": "ok",
+      "items": 5
+    },
+    {
+      "name": "daa",
+      "last_ok": 1787411743.1647632,
+      "status": "ok",
+      "items": 5
+    }
+  ],
+  "history_embed": {
+    "tps_total": [
+      [
+        1787407303990.9133,
+        3432.0
+      ],
+      [
+        1787407348285.76,
+        3431.4
+      ],
+      [
+        1787407348989.6392,
+        3431.4
+      ],
+      [
+        1787407419571.9878,
+        3443.2
+      ],
+      [
+        1787407422419.889,
+        3442.5
+      ],
+      [
+        1787407482922.0044,
+        3440.8
+      ],
+      [
+        1787407489595.0374,
+        3440.8
+      ],
+      [
+        1787407556475.1729,
+        3446.9
+      ],
+      [
+        1787407563329.2593,
+        3446.9
+      ],
+      [
+        1787407630816.7156,
+        3456.4
+      ],
+      [
+        1787407638210.1445,
+        3456.4
+      ],
+      [
+        1787407706149.2195,
+        3473.1
+      ],
+      [
+        1787407713830.9993,
+        3473.1
+      ],
+      [
+        1787407812805.1567,
+        3481.3
+      ],
+      [
+        1787407813975.036,
+        3481.3
+      ],
+      [
+        1787407858548.1392,
+        3485.2
+      ],
+      [
+        1787407859744.8105,
+        3485.2
+      ],
+      [
+        1787407892115.3867,
+        3485.2
+      ],
+      [
+        1787407936703.3237,
+        3492.6
+      ],
+      [
+        1787407968681.5925,
+        3493.8
+      ],
+      [
+        1787408010017.083,
+        3502.2
+      ],
+      [
+        1787408044176.6035,
+        3502.2
+      ],
+      [
+        1787408117070.3872,
+        3510.8
+      ],
+      [
+        1787408189659.2246,
+        3513.2
+      ],
+      [
+        1787408261047.9775,
+        3513.7
+      ],
+      [
+        1787408333177.3772,
+        3513.7
+      ],
+      [
+        1787408405781.9165,
+        3516.5
+      ],
+      [
+        1787408481088.8118,
+        3517.8
+      ],
+      [
+        1787408556564.6523,
+        3533.1
+      ],
+      [
+        1787408632290.563,
+        3531.8
+      ],
+      [
+        1787408706674.0828,
+        3542.8
+      ],
+      [
+        1787408780488.5083,
+        3544.6
+      ],
+      [
+        1787408853644.394,
+        3538.3
+      ],
+      [
+        1787408927427.5457,
+        3539.8
+      ],
+      [
+        1787408999256.418,
+        3545.0
+      ],
+      [
+        1787409041545.3782,
+        3536.5
+      ],
+      [
+        1787409072811.7642,
+        3536.5
+      ],
+      [
+        1787409073750.5159,
+        3536.5
+      ],
+      [
+        1787409144057.659,
+        3541.6
+      ],
+      [
+        1787409257957.2002,
+        3543.6
+      ],
+      [
+        1787409258743.696,
+        3543.6
+      ],
+      [
+        1787409331660.7397,
+        3547.7
+      ],
+      [
+        1787409332227.4417,
+        3547.7
+      ],
+      [
+        1787409401871.2883,
+        3553.0
+      ],
+      [
+        1787409469657.3528,
+        3552.4
+      ],
+      [
+        1787409526812.2603,
+        3555.8
+      ],
+      [
+        1787409527263.0745,
+        3555.8
+      ],
+      [
+        1787409595961.1914,
+        3552.2
+      ],
+      [
+        1787409664090.237,
+        3556.9
+      ],
+      [
+        1787409733719.9026,
+        3563.0
+      ],
+      [
+        1787409802135.683,
+        3571.9
+      ],
+      [
+        1787409870189.2766,
+        3587.1
+      ],
+      [
+        1787409939289.9849,
+        3585.8
+      ],
+      [
+        1787410006467.6853,
+        3597.7
+      ],
+      [
+        1787410075535.3481,
+        3614.2
+      ],
+      [
+        1787410144474.4644,
+        3618.1
+      ],
+      [
+        1787410213084.9521,
+        3628.4
+      ],
+      [
+        1787410263521.153,
+        3625.9
+      ],
+      [
+        1787410264451.6335,
+        3625.9
+      ],
+      [
+        1787410333310.2664,
+        3649.2
+      ],
+      [
+        1787410401327.2766,
+        3660.9
+      ],
+      [
+        1787410478459.3865,
+        3668.8
+      ],
+      [
+        1787410554281.131,
+        3700.6
+      ],
+      [
+        1787410629270.6804,
+        3711.1
+      ],
+      [
+        1787410707910.0273,
+        3720.5
+      ],
+      [
+        1787410775990.1843,
+        3736.9
+      ],
+      [
+        1787410845119.2588,
+        3745.1
+      ],
+      [
+        1787410914108.4146,
+        3757.1
+      ],
+      [
+        1787410983577.7783,
+        3762.6
+      ],
+      [
+        1787411051778.8247,
+        3780.1
+      ],
+      [
+        1787411119540.7227,
+        3787.0
+      ],
+      [
+        1787411187626.9282,
+        3790.0
+      ],
+      [
+        1787411255054.5583,
+        3793.0
+      ],
+      [
+        1787411323169.96,
+        3794.8
+      ],
+      [
+        1787411390679.0562,
+        3798.3
+      ],
+      [
+        1787411458613.9336,
+        3801.3
+      ],
+      [
+        1787411527535.3242,
+        3819.8
+      ],
+      [
+        1787411596292.7476,
+        3821.6
+      ],
+      [
+        1787411672262.4788,
+        3827.9
+      ],
+      [
+        1787411681987.2046,
+        3827.9
+      ],
+      [
+        1787411743178.3567,
+        3827.2
+      ]
+    ],
+    "sol_price_usd": [
+      [
+        1787406867413.9688,
+        94.08
+      ],
+      [
+        1787407141570.6643,
+        94.01
+      ],
+      [
+        1787407303990.9133,
+        94.1
+      ],
+      [
+        1787407348285.76,
+        94.1
+      ],
+      [
+        1787407348989.6392,
+        94.1
+      ],
+      [
+        1787407382822.037,
+        94.17
+      ],
+      [
+        1787407384223.289,
+        94.17
+      ],
+      [
+        1787407419571.9878,
+        94.17
+      ],
+      [
+        1787407422419.889,
+        94.17
+      ],
+      [
+        1787407482922.0044,
+        94.15
+      ],
+      [
+        1787407489595.0374,
+        94.15
+      ],
+      [
+        1787407556475.1729,
+        94.06
+      ],
+      [
+        1787407563329.2593,
+        94.06
+      ],
+      [
+        1787407630816.7156,
+        93.99
+      ],
+      [
+        1787407638210.1445,
+        93.99
+      ],
+      [
+        1787407706149.2195,
+        93.84
+      ],
+      [
+        1787407713830.9993,
+        93.84
+      ],
+      [
+        1787407812805.1567,
+        93.69
+      ],
+      [
+        1787407813975.036,
+        93.69
+      ],
+      [
+        1787407858548.1392,
+        93.71
+      ],
+      [
+        1787407859744.8105,
+        93.71
+      ],
+      [
+        1787407892115.3867,
+        93.71
+      ],
+      [
+        1787407936703.3237,
+        93.84
+      ],
+      [
+        1787407968681.5925,
+        93.9
+      ],
+      [
+        1787408010017.083,
+        93.9
+      ],
+      [
+        1787408044176.6035,
+        93.85
+      ],
+      [
+        1787408117070.3872,
+        93.9
+      ],
+      [
+        1787408189659.2246,
+        93.83
+      ],
+      [
+        1787408261047.9775,
+        93.82
+      ],
+      [
+        1787408333177.3772,
+        93.81
+      ],
+      [
+        1787408405781.9165,
+        93.63
+      ],
+      [
+        1787408481088.8118,
+        93.64
+      ],
+      [
+        1787408556564.6523,
+        93.77
+      ],
+      [
+        1787408632290.563,
+        93.79
+      ],
+      [
+        1787408706674.0828,
+        93.76
+      ],
+      [
+        1787408780488.5083,
+        93.72
+      ],
+      [
+        1787408853644.394,
+        93.67
+      ],
+      [
+        1787408927427.5457,
+        93.65
+      ],
+      [
+        1787408999256.418,
+        93.64
+      ],
+      [
+        1787409041545.3782,
+        93.64
+      ],
+      [
+        1787409072811.7642,
+        93.78
+      ],
+      [
+        1787409073750.5159,
+        93.78
+      ],
+      [
+        1787409144057.659,
+        93.82
+      ],
+      [
+        1787409257957.2002,
+        93.75
+      ],
+      [
+        1787409258743.696,
+        93.75
+      ],
+      [
+        1787409331660.7397,
+        93.91
+      ],
+      [
+        1787409332227.4417,
+        93.91
+      ],
+      [
+        1787409401871.2883,
+        93.96
+      ],
+      [
+        1787409469657.3528,
+        93.87
+      ],
+      [
+        1787409526812.2603,
+        93.9
+      ],
+      [
+        1787409527263.0745,
+        93.9
+      ],
+      [
+        1787409595961.1914,
+        93.84
+      ],
+      [
+        1787409664090.237,
+        93.68
+      ],
+      [
+        1787409733719.9026,
+        93.7
+      ],
+      [
+        1787409802135.683,
+        93.62
+      ],
+      [
+        1787409870189.2766,
+        93.57
+      ],
+      [
+        1787409939289.9849,
+        93.52
+      ],
+      [
+        1787410006467.6853,
+        93.41
+      ],
+      [
+        1787410075535.3481,
+        93.34
+      ],
+      [
+        1787410144474.4644,
+        93.34
+      ],
+      [
+        1787410213084.9521,
+        93.37
+      ],
+      [
+        1787410263521.153,
+        93.37
+      ],
+      [
+        1787410264451.6335,
+        93.37
+      ],
+      [
+        1787410333310.2664,
+        93.2
+      ],
+      [
+        1787410401327.2766,
+        93.2
+      ],
+      [
+        1787410478459.3865,
+        93.22
+      ],
+      [
+        1787410554281.131,
+        93.1
+      ],
+      [
+        1787410629270.6804,
+        93.05
+      ],
+      [
+        1787410707910.0273,
+        93.0
+      ],
+      [
+        1787410775990.1843,
+        93.17
+      ],
+      [
+        1787410845119.2588,
+        93.17
+      ],
+      [
+        1787410914108.4146,
+        93.22
+      ],
+      [
+        1787410983577.7783,
+        93.12
+      ],
+      [
+        1787411051778.8247,
+        93.25
+      ],
+      [
+        1787411119540.7227,
+        93.33
+      ],
+      [
+        1787411187626.9282,
+        93.2
+      ],
+      [
+        1787411255054.5583,
+        93.17
+      ],
+      [
+        1787411323169.96,
+        93.21
+      ],
+      [
+        1787411390679.0562,
+        93.17
+      ],
+      [
+        1787411458613.9336,
+        93.12
+      ],
+      [
+        1787411527535.3242,
+        93.11
+      ],
+      [
+        1787411596292.7476,
+        93.22
+      ],
+      [
+        1787411672262.4788,
+        93.1
+      ],
+      [
+        1787411681987.2046,
+        93.1
+      ],
+      [
+        1787411743178.3567,
+        93.01
+      ]
+    ],
+    "defi_tvl_usd": [
+      [
+        1787406867413.9688,
+        5508017430.256062
+      ],
+      [
+        1787407141570.6643,
+        5508017430.256062
+      ],
+      [
+        1787407303990.9133,
+        5508017430.256062
+      ],
+      [
+        1787407348285.76,
+        5508017430.256062
+      ],
+      [
+        1787407348989.6392,
+        5508017430.256062
+      ],
+      [
+        1787407382822.037,
+        5508017430.256062
+      ],
+      [
+        1787407384223.289,
+        5508017430.256062
+      ],
+      [
+        1787407419571.9878,
+        5508017430.256062
+      ],
+      [
+        1787407422419.889,
+        5508017430.256062
+      ],
+      [
+        1787407482922.0044,
+        5508017430.256062
+      ],
+      [
+        1787407489595.0374,
+        5508017430.256062
+      ],
+      [
+        1787407556475.1729,
+        5508017430.256062
+      ],
+      [
+        1787407563329.2593,
+        5508017430.256062
+      ],
+      [
+        1787407630816.7156,
+        5508017430.256062
+      ],
+      [
+        1787407638210.1445,
+        5508017430.256062
+      ],
+      [
+        1787407706149.2195,
+        5508017430.256062
+      ],
+      [
+        1787407713830.9993,
+        5508017430.256062
+      ],
+      [
+        1787407812805.1567,
+        5529047127.776179
+      ],
+      [
+        1787407813975.036,
+        5529047127.776179
+      ],
+      [
+        1787407858548.1392,
+        5529047127.776179
+      ],
+      [
+        1787407859744.8105,
+        5529047127.776179
+      ],
+      [
+        1787407892115.3867,
+        5529047127.776179
+      ],
+      [
+        1787407936703.3237,
+        5529047127.776179
+      ],
+      [
+        1787407968681.5925,
+        5529047127.776179
+      ],
+      [
+        1787408010017.083,
+        5529047127.776179
+      ],
+      [
+        1787408044176.6035,
+        5529047127.776179
+      ],
+      [
+        1787408117070.3872,
+        5529047127.776179
+      ],
+      [
+        1787408189659.2246,
+        5529047127.776179
+      ],
+      [
+        1787408261047.9775,
+        5529047127.776179
+      ],
+      [
+        1787408333177.3772,
+        5529047127.776179
+      ],
+      [
+        1787408405781.9165,
+        5529047127.776179
+      ],
+      [
+        1787408481088.8118,
+        5529047127.776179
+      ],
+      [
+        1787408556564.6523,
+        5529047127.776179
+      ],
+      [
+        1787408632290.563,
+        5529047127.776179
+      ],
+      [
+        1787408706674.0828,
+        5529047127.776179
+      ],
+      [
+        1787408780488.5083,
+        5529047127.776179
+      ],
+      [
+        1787408853644.394,
+        5529047127.776179
+      ],
+      [
+        1787408927427.5457,
+        5529047127.776179
+      ],
+      [
+        1787408999256.418,
+        5529047127.776179
+      ],
+      [
+        1787409041545.3782,
+        5529047127.776179
+      ],
+      [
+        1787409072811.7642,
+        5529047127.776179
+      ],
+      [
+        1787409073750.5159,
+        5529047127.776179
+      ],
+      [
+        1787409144057.659,
+        5529047127.776179
+      ],
+      [
+        1787409257957.2002,
+        5529047127.776179
+      ],
+      [
+        1787409258743.696,
+        5529047127.776179
+      ],
+      [
+        1787409331660.7397,
+        5529047127.776179
+      ],
+      [
+        1787409332227.4417,
+        5529047127.776179
+      ],
+      [
+        1787409401871.2883,
+        5529047127.776179
+      ],
+      [
+        1787409469657.3528,
+        5529047127.776179
+      ],
+      [
+        1787409526812.2603,
+        5529047127.776179
+      ],
+      [
+        1787409527263.0745,
+        5529047127.776179
+      ],
+      [
+        1787409595961.1914,
+        5529324703.340835
+      ],
+      [
+        1787409664090.237,
+        5529324703.340835
+      ],
+      [
+        1787409733719.9026,
+        5529324703.340835
+      ],
+      [
+        1787409802135.683,
+        5529324703.340835
+      ],
+      [
+        1787409870189.2766,
+        5529324703.340835
+      ],
+      [
+        1787409939289.9849,
+        5529324703.340835
+      ],
+      [
+        1787410006467.6853,
+        5529324703.340835
+      ],
+      [
+        1787410075535.3481,
+        5529324703.340835
+      ],
+      [
+        1787410144474.4644,
+        5529324703.340835
+      ],
+      [
+        1787410213084.9521,
+        5529324703.340835
+      ],
+      [
+        1787410263521.153,
+        5529324703.340835
+      ],
+      [
+        1787410264451.6335,
+        5529324703.340835
+      ],
+      [
+        1787410333310.2664,
+        5529324703.340835
+      ],
+      [
+        1787410401327.2766,
+        5529324703.340835
+      ],
+      [
+        1787410478459.3865,
+        5529324703.340835
+      ],
+      [
+        1787410554281.131,
+        5529324703.340835
+      ],
+      [
+        1787410629270.6804,
+        5529324703.340835
+      ],
+      [
+        1787410707910.0273,
+        5529324703.340835
+      ],
+      [
+        1787410775990.1843,
+        5529324703.340835
+      ],
+      [
+        1787410845119.2588,
+        5529324703.340835
+      ],
+      [
+        1787410914108.4146,
+        5529324703.340835
+      ],
+      [
+        1787410983577.7783,
+        5529324703.340835
+      ],
+      [
+        1787411051778.8247,
+        5529324703.340835
+      ],
+      [
+        1787411119540.7227,
+        5529324703.340835
+      ],
+      [
+        1787411187626.9282,
+        5529324703.340835
+      ],
+      [
+        1787411255054.5583,
+        5529324703.340835
+      ],
+      [
+        1787411323169.96,
+        5529324703.340835
+      ],
+      [
+        1787411390679.0562,
+        5529324703.340835
+      ],
+      [
+        1787411458613.9336,
+        5529324703.340835
+      ],
+      [
+        1787411527535.3242,
+        5529324703.340835
+      ],
+      [
+        1787411596292.7476,
+        5529324703.340835
+      ],
+      [
+        1787411672262.4788,
+        5529324703.340835
+      ],
+      [
+        1787411681987.2046,
+        5529324703.340835
+      ],
+      [
+        1787411743178.3567,
+        5529324703.340835
+      ]
+    ],
+    "dex_volume_24h_usd": [
+      [
+        1787406867413.9688,
+        3600948276.22
+      ],
+      [
+        1787407141570.6643,
+        3600948276.22
+      ],
+      [
+        1787407303990.9133,
+        3600948276.22
+      ],
+      [
+        1787407348285.76,
+        3600948276.22
+      ],
+      [
+        1787407348989.6392,
+        3600948276.22
+      ],
+      [
+        1787407382822.037,
+        3600948276.22
+      ],
+      [
+        1787407384223.289,
+        3600948276.22
+      ],
+      [
+        1787407419571.9878,
+        3600948276.22
+      ],
+      [
+        1787407422419.889,
+        3600948276.22
+      ],
+      [
+        1787407482922.0044,
+        3600948276.22
+      ],
+      [
+        1787407489595.0374,
+        3600948276.22
+      ],
+      [
+        1787407556475.1729,
+        3600948276.22
+      ],
+      [
+        1787407563329.2593,
+        3600948276.22
+      ],
+      [
+        1787407630816.7156,
+        3600948276.22
+      ],
+      [
+        1787407638210.1445,
+        3600948276.22
+      ],
+      [
+        1787407706149.2195,
+        3600948276.22
+      ],
+      [
+        1787407713830.9993,
+        3600948276.22
+      ],
+      [
+        1787407812805.1567,
+        3600948276.22
+      ],
+      [
+        1787407813975.036,
+        3600948276.22
+      ],
+      [
+        1787407858548.1392,
+        3600948276.22
+      ],
+      [
+        1787407859744.8105,
+        3600948276.22
+      ],
+      [
+        1787407892115.3867,
+        3600948276.22
+      ],
+      [
+        1787407936703.3237,
+        3600948276.22
+      ],
+      [
+        1787407968681.5925,
+        3600948276.22
+      ],
+      [
+        1787408010017.083,
+        3600948276.22
+      ],
+      [
+        1787408044176.6035,
+        3600948276.22
+      ],
+      [
+        1787408117070.3872,
+        3600948276.22
+      ],
+      [
+        1787408189659.2246,
+        3600948276.22
+      ],
+      [
+        1787408261047.9775,
+        3600948276.22
+      ],
+      [
+        1787408333177.3772,
+        3600948276.22
+      ],
+      [
+        1787408405781.9165,
+        3600948276.22
+      ],
+      [
+        1787408481088.8118,
+        3600948276.22
+      ],
+      [
+        1787408556564.6523,
+        3600948276.22
+      ],
+      [
+        1787408632290.563,
+        3600948276.22
+      ],
+      [
+        1787408706674.0828,
+        3600948276.22
+      ],
+      [
+        1787408780488.5083,
+        3600948276.22
+      ],
+      [
+        1787408853644.394,
+        3600948276.22
+      ],
+      [
+        1787408927427.5457,
+        3600948276.22
+      ],
+      [
+        1787408999256.418,
+        3600948276.22
+      ],
+      [
+        1787409041545.3782,
+        3600948276.22
+      ],
+      [
+        1787409072811.7642,
+        3600948276.22
+      ],
+      [
+        1787409073750.5159,
+        3600948276.22
+      ],
+      [
+        1787409144057.659,
+        3600948276.22
+      ],
+      [
+        1787409257957.2002,
+        3600948276.22
+      ],
+      [
+        1787409258743.696,
+        3600948276.22
+      ],
+      [
+        1787409331660.7397,
+        3600948276.22
+      ],
+      [
+        1787409332227.4417,
+        3600948276.22
+      ],
+      [
+        1787409401871.2883,
+        3600948276.22
+      ],
+      [
+        1787409469657.3528,
+        3600948276.22
+      ],
+      [
+        1787409526812.2603,
+        3600948276.22
+      ],
+      [
+        1787409527263.0745,
+        3600948276.22
+      ],
+      [
+        1787409595961.1914,
+        3600948276.22
+      ],
+      [
+        1787409664090.237,
+        3600948276.22
+      ],
+      [
+        1787409733719.9026,
+        3600948276.22
+      ],
+      [
+        1787409802135.683,
+        3600948276.22
+      ],
+      [
+        1787409870189.2766,
+        3600948276.22
+      ],
+      [
+        1787409939289.9849,
+        3600948276.22
+      ],
+      [
+        1787410006467.6853,
+        3600948276.22
+      ],
+      [
+        1787410075535.3481,
+        3600948276.22
+      ],
+      [
+        1787410144474.4644,
+        3600948276.22
+      ],
+      [
+        1787410213084.9521,
+        3600948276.22
+      ],
+      [
+        1787410263521.153,
+        3600948276.22
+      ],
+      [
+        1787410264451.6335,
+        3600948276.22
+      ],
+      [
+        1787410333310.2664,
+        3600948276.22
+      ],
+      [
+        1787410401327.2766,
+        3600948276.22
+      ],
+      [
+        1787410478459.3865,
+        3600948276.22
+      ],
+      [
+        1787410554281.131,
+        3600948276.22
+      ],
+      [
+        1787410629270.6804,
+        3600948276.22
+      ],
+      [
+        1787410707910.0273,
+        3600948276.22
+      ],
+      [
+        1787410775990.1843,
+        3600948276.22
+      ],
+      [
+        1787410845119.2588,
+        3600948276.22
+      ],
+      [
+        1787410914108.4146,
+        3600948276.22
+      ],
+      [
+        1787410983577.7783,
+        3600948276.22
+      ],
+      [
+        1787411051778.8247,
+        3600948276.22
+      ],
+      [
+        1787411119540.7227,
+        3600948276.22
+      ],
+      [
+        1787411187626.9282,
+        3600948276.22
+      ],
+      [
+        1787411255054.5583,
+        3600948276.22
+      ],
+      [
+        1787411323169.96,
+        3600948276.22
+      ],
+      [
+        1787411390679.0562,
+        3600948276.22
+      ],
+      [
+        1787411458613.9336,
+        3600948276.22
+      ],
+      [
+        1787411527535.3242,
+        3600948276.22
+      ],
+      [
+        1787411596292.7476,
+        3600948276.22
+      ],
+      [
+        1787411672262.4788,
+        3600948276.22
+      ],
+      [
+        1787411681987.2046,
+        3600948276.22
+      ],
+      [
+        1787411743178.3567,
+        3600948276.22
+      ]
+    ],
+    "stablecoin_supply_usd": [
+      [
+        1787406867413.9688,
+        308196096546.89
+      ],
+      [
+        1787407141570.6643,
+        16342279469.84
+      ],
+      [
+        1787407303990.9133,
+        16342279469.84
+      ],
+      [
+        1787407348285.76,
+        16342279469.84
+      ],
+      [
+        1787407348989.6392,
+        16342279469.84
+      ],
+      [
+        1787407382822.037,
+        16342279469.84
+      ],
+      [
+        1787407384223.289,
+        16342279469.84
+      ],
+      [
+        1787407419571.9878,
+        16342279469.84
+      ],
+      [
+        1787407422419.889,
+        16342279469.84
+      ],
+      [
+        1787407482922.0044,
+        16342279469.84
+      ],
+      [
+        1787407489595.0374,
+        16342279469.84
+      ],
+      [
+        1787407556475.1729,
+        16342279469.84
+      ],
+      [
+        1787407563329.2593,
+        16342279469.84
+      ],
+      [
+        1787407630816.7156,
+        16342279469.84
+      ],
+      [
+        1787407638210.1445,
+        16342279469.84
+      ],
+      [
+        1787407706149.2195,
+        16342279469.84
+      ],
+      [
+        1787407713830.9993,
+        16342279469.84
+      ],
+      [
+        1787407812805.1567,
+        16342279469.84
+      ],
+      [
+        1787407813975.036,
+        16342279469.84
+      ],
+      [
+        1787407858548.1392,
+        16342279469.84
+      ],
+      [
+        1787407859744.8105,
+        16342279469.84
+      ],
+      [
+        1787407892115.3867,
+        16342279469.84
+      ],
+      [
+        1787407936703.3237,
+        16342279469.84
+      ],
+      [
+        1787407968681.5925,
+        16342279469.84
+      ],
+      [
+        1787408010017.083,
+        16342279469.84
+      ],
+      [
+        1787408044176.6035,
+        16342279469.84
+      ],
+      [
+        1787408117070.3872,
+        16342279469.84
+      ],
+      [
+        1787408189659.2246,
+        16342279469.84
+      ],
+      [
+        1787408261047.9775,
+        16342279469.84
+      ],
+      [
+        1787408333177.3772,
+        16342279469.84
+      ],
+      [
+        1787408405781.9165,
+        16342279469.84
+      ],
+      [
+        1787408481088.8118,
+        16342279469.84
+      ],
+      [
+        1787408556564.6523,
+        16342279469.84
+      ],
+      [
+        1787408632290.563,
+        16342279469.84
+      ],
+      [
+        1787408706674.0828,
+        16342279469.84
+      ],
+      [
+        1787408780488.5083,
+        16342279469.84
+      ],
+      [
+        1787408853644.394,
+        16342279469.84
+      ],
+      [
+        1787408927427.5457,
+        16342279469.84
+      ],
+      [
+        1787408999256.418,
+        16342279469.84
+      ],
+      [
+        1787409041545.3782,
+        16342279469.84
+      ],
+      [
+        1787409072811.7642,
+        16342279469.84
+      ],
+      [
+        1787409073750.5159,
+        16342279469.84
+      ],
+      [
+        1787409144057.659,
+        16342279469.84
+      ],
+      [
+        1787409257957.2002,
+        16342279469.84
+      ],
+      [
+        1787409258743.696,
+        16342279469.84
+      ],
+      [
+        1787409331660.7397,
+        16342279469.84
+      ],
+      [
+        1787409332227.4417,
+        16342279469.84
+      ],
+      [
+        1787409401871.2883,
+        16342279469.84
+      ],
+      [
+        1787409469657.3528,
+        16342279469.84
+      ],
+      [
+        1787409526812.2603,
+        16342279469.84
+      ],
+      [
+        1787409527263.0745,
+        16342279469.84
+      ],
+      [
+        1787409595961.1914,
+        16342279469.84
+      ],
+      [
+        1787409664090.237,
+        16342279469.84
+      ],
+      [
+        1787409733719.9026,
+        16342279469.84
+      ],
+      [
+        1787409802135.683,
+        16342279469.84
+      ],
+      [
+        1787409870189.2766,
+        16342279469.84
+      ],
+      [
+        1787409939289.9849,
+        16342279469.84
+      ],
+      [
+        1787410006467.6853,
+        16342279469.84
+      ],
+      [
+        1787410075535.3481,
+        16342279469.84
+      ],
+      [
+        1787410144474.4644,
+        16342279469.84
+      ],
+      [
+        1787410213084.9521,
+        16342279469.84
+      ],
+      [
+        1787410263521.153,
+        16342279469.84
+      ],
+      [
+        1787410264451.6335,
+        16342279469.84
+      ],
+      [
+        1787410333310.2664,
+        16342279469.84
+      ],
+      [
+        1787410401327.2766,
+        16342279469.84
+      ],
+      [
+        1787410478459.3865,
+        16342279469.84
+      ],
+      [
+        1787410554281.131,
+        16342279469.84
+      ],
+      [
+        1787410629270.6804,
+        16342279469.84
+      ],
+      [
+        1787410707910.0273,
+        16342279469.84
+      ],
+      [
+        1787410775990.1843,
+        16342279469.84
+      ],
+      [
+        1787410845119.2588,
+        16342279469.84
+      ],
+      [
+        1787410914108.4146,
+        16342279469.84
+      ],
+      [
+        1787410983577.7783,
+        16342279469.84
+      ],
+      [
+        1787411051778.8247,
+        16342279469.84
+      ],
+      [
+        1787411119540.7227,
+        16342279469.84
+      ],
+      [
+        1787411187626.9282,
+        16342279469.84
+      ],
+      [
+        1787411255054.5583,
+        16342279469.84
+      ],
+      [
+        1787411323169.96,
+        16342279469.84
+      ],
+      [
+        1787411390679.0562,
+        16342279469.84
+      ],
+      [
+        1787411458613.9336,
+        16342279469.84
+      ],
+      [
+        1787411527535.3242,
+        16342279469.84
+      ],
+      [
+        1787411596292.7476,
+        16342279469.84
+      ],
+      [
+        1787411672262.4788,
+        16342279469.84
+      ],
+      [
+        1787411681987.2046,
+        16342279469.84
+      ],
+      [
+        1787411743178.3567,
+        16342279469.84
+      ]
+    ],
+    "median_tx_fee_sol": [
+      [
+        1787409041545.3782,
+        5e-06
+      ],
+      [
+        1787409072811.7642,
+        5e-06
+      ],
+      [
+        1787409073750.5159,
+        5e-06
+      ],
+      [
+        1787409144057.659,
+        5e-06
+      ],
+      [
+        1787409257957.2002,
+        5e-06
+      ],
+      [
+        1787409258743.696,
+        5e-06
+      ],
+      [
+        1787409331660.7397,
+        5e-06
+      ],
+      [
+        1787409332227.4417,
+        5e-06
+      ],
+      [
+        1787409401871.2883,
+        5e-06
+      ],
+      [
+        1787409469657.3528,
+        5e-06
+      ],
+      [
+        1787409526812.2603,
+        5e-06
+      ],
+      [
+        1787409527263.0745,
+        5e-06
+      ],
+      [
+        1787409595961.1914,
+        5e-06
+      ],
+      [
+        1787409664090.237,
+        5e-06
+      ],
+      [
+        1787409733719.9026,
+        5e-06
+      ],
+      [
+        1787409802135.683,
+        5e-06
+      ],
+      [
+        1787409870189.2766,
+        5e-06
+      ],
+      [
+        1787409939289.9849,
+        5e-06
+      ],
+      [
+        1787410006467.6853,
+        5e-06
+      ],
+      [
+        1787410075535.3481,
+        5e-06
+      ],
+      [
+        1787410144474.4644,
+        5e-06
+      ],
+      [
+        1787410213084.9521,
+        5e-06
+      ],
+      [
+        1787410263521.153,
+        5e-06
+      ],
+      [
+        1787410264451.6335,
+        5e-06
+      ],
+      [
+        1787410333310.2664,
+        5e-06
+      ],
+      [
+        1787410401327.2766,
+        5e-06
+      ],
+      [
+        1787410478459.3865,
+        5e-06
+      ],
+      [
+        1787410554281.131,
+        5e-06
+      ],
+      [
+        1787410629270.6804,
+        5e-06
+      ],
+      [
+        1787410707910.0273,
+        5e-06
+      ],
+      [
+        1787410775990.1843,
+        5e-06
+      ],
+      [
+        1787410845119.2588,
+        5e-06
+      ],
+      [
+        1787410914108.4146,
+        5e-06
+      ],
+      [
+        1787410983577.7783,
+        5e-06
+      ],
+      [
+        1787411051778.8247,
+        5e-06
+      ],
+      [
+        1787411119540.7227,
+        5e-06
+      ],
+      [
+        1787411187626.9282,
+        5e-06
+      ],
+      [
+        1787411255054.5583,
+        5e-06
+      ],
+      [
+        1787411323169.96,
+        5e-06
+      ],
+      [
+        1787411390679.0562,
+        5e-06
+      ],
+      [
+        1787411458613.9336,
+        5e-06
+      ],
+      [
+        1787411527535.3242,
+        5e-06
+      ],
+      [
+        1787411596292.7476,
+        5e-06
+      ],
+      [
+        1787411672262.4788,
+        5e-06
+      ],
+      [
+        1787411681987.2046,
+        5e-06
+      ],
+      [
+        1787411743178.3567,
+        5e-06
+      ]
+    ]
+  }
+}

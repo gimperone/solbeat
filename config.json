@@ -1,0 +1,47 @@
+{
+  "project": "solbeat",
+  "port": 7801,
+  "rpc_endpoints": [
+    "https://api.mainnet-beta.solana.com"
+  ],
+  "intervals_sec": {
+    "rpc": 60,
+    "daa": 1800,
+    "defillama": 300,
+    "coingecko": 300,
+    "news": 900
+  },
+  "anomaly": {
+    "window_size": 120,
+    "z_threshold": 3.0,
+    "avg_slot_ms_warn": 600,
+    "avg_slot_ms_crit": 1000,
+    "delinquent_pct_warn": 1.0,
+    "delinquent_pct_crit": 5.0,
+    "tps_drop_pct": 50,
+    "price_move_pct": 15,
+    "tvl_move_pct": 10,
+    "stables_move_pct": 5,
+    "price_divergence_warn": 1.5,
+    "validators_drop_pct": 2.0,
+    "fee_spike_z": 3.0
+  },
+  "daa_sample_blocks": 6,
+  "jupiter_program": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+  "top_validators_count": 25,
+  "news": {
+    "max_items": 30,
+    "keyword_filter": ["solana", "jito", "jupiter", "alpenglow", "simd", " Firedancer", "agave"],
+    "feeds": [
+      { "name": "Cointelegraph", "url": "https://cointelegraph.com/rss" },
+      { "name": "CoinDesk", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/" },
+      { "name": "Agave Releases", "url": "https://github.com/anza-xyz/agave/releases.atom" }
+    ]
+  },
+  "upgrades": [
+    { "name": "Alpenglow", "status": "research/rollout", "note": "New consensus protocol replacing TowerBFT+PoH, target ~100-150ms finality.", "link": "https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana" },
+    { "name": "SIMD-525", "status": "proposed", "note": "Multiple concurrent leaders proposal to reduce block time to ~400ms and improve confirmation latency.", "link": "https://github.com/solana-foundation/solana-improvement-documents" },
+    { "name": "Firedancer", "status": "testnet/staged rollout", "note": "Independent C++ validator client by Jump Crypto for client diversity and throughput.", "link": "https://github.com/firedancer-io/firedancer" },
+    { "name": "Agave v2.x", "status": "mainnet", "note": "Anza's maintained validator client; ongoing scheduling/priority-fee market improvements.", "link": "https://github.com/anza-xyz/agave" }
+  ]
+}

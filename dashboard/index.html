@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolBeat — Solana Ecosystem Report</title>
+<style>
+  :root {
+    --bg:#07090f; --panel:#0e1420; --panel2:#141c2b; --border:#1d2941;
+    --text:#dbe4f3; --muted:#71809b; --green:#14f195; --purple:#9945ff;
+    --blue:#5aa2ff; --red:#ff5c5c; --gold:#ffc94d;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:64px; }
+  body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif; font-size:14px; }
+  a { color:var(--blue); text-decoration:none; }
+  .wrap { padding:18px 22px; max-width:1500px; margin:0 auto; }
+
+  nav { position:sticky; top:0; z-index:50; background:rgba(7,9,15,.92); backdrop-filter:blur(8px);
+        border-bottom:1px solid var(--border); padding:10px 22px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  nav h1 { font-size:17px; } nav h1 b { color:var(--green); }
+  nav .links { display:flex; gap:2px; flex-wrap:wrap; }
+  nav .links a { color:var(--muted); font-size:12px; font-weight:600; padding:5px 10px; border-radius:8px; }
+  nav .links a:hover, nav .links a.on { color:var(--text); background:var(--panel2); }
+  .spacer { flex:1; }
+  .dot { width:8px; height:8px; border-radius:50%; background:var(--green); display:inline-block; margin-right:5px;
+         box-shadow:0 0 6px var(--green); animation:pulse 2s infinite; }
+  .dot.bad { background:var(--red); box-shadow:none; animation:none; }
+  @keyframes pulse { 50% { opacity:.4; } }
+  #countdown { font-variant-numeric:tabular-nums; color:var(--muted); font-size:12px; min-width:52px; text-align:right; }
+
+  section { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; margin-bottom:16px; }
+  h2 { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.8px; margin-bottom:12px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+  .i { cursor:help; opacity:.55; font-style:normal; font-size:11px; border:1px solid var(--muted); border-radius:50%; padding:0 5px; }
+  .i:hover { opacity:1; }
+
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(158px,1fr)); gap:10px; }
+  .kpi { background:var(--panel2); border:1px solid var(--border); border-radius:10px; padding:11px 12px; position:relative; overflow:hidden; }
+  .kpi .l { color:var(--muted); font-size:10.5px; text-transform:uppercase; letter-spacing:.4px; display:flex; align-items:center; gap:4px; }
+  .kpi .v { font-size:19px; font-weight:700; margin-top:4px; white-space:nowrap; }
+  .kpi .d { font-size:10.5px; margin-top:2px; color:var(--muted); }
+  .up { color:var(--green); } .down { color:var(--red); } .warn { color:var(--gold); }
+
+  .epoch-card { grid-column:span 2; min-width:220px; }
+  .epoch-bar { background:#101a2c; border-radius:999px; height:9px; overflow:hidden; margin-top:8px; }
+  .epoch-fill { height:100%; background:linear-gradient(90deg,var(--purple),var(--green)); transition:width 1s; }
+
+  .charts { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media(max-width:900px){ .charts{grid-template-columns:1fr;} }
+  .chart-box { background:var(--panel2); border:1px solid var(--border); border-radius:10px; padding:10px; position:relative; }
+  .chart-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
+  .ranges button { background:transparent; border:1px solid var(--border); color:var(--muted); font-size:10px;
+                   border-radius:999px; padding:2px 8px; cursor:pointer; margin-left:4px; }
+  .ranges button.on { color:var(--green); border-color:var(--green); }
+  svg { width:100%; height:140px; display:block; }
+  #tooltip { position:absolute; pointer-events:none; background:#0a0f19; border:1px solid var(--border);
+             border-radius:8px; padding:6px 9px; font-size:11px; display:none; z-index:5; white-space:nowrap; }
+  .sub { color:var(--muted); font-size:11px; margin-top:3px; }
+
+  .alert-item { border-left:3px solid var(--red); background:rgba(255,92,92,.05); padding:8px 12px; border-radius:0 8px 8px 0; margin-bottom:6px; font-size:12.5px; }
+  .alert-item.warn { border-left-color:var(--gold); background:rgba(255,201,77,.04); }
+  .alert-item time { float:right; color:var(--muted); font-size:10.5px; }
+  .filters { display:flex; gap:6px; margin-bottom:10px; flex-wrap:wrap; align-items:center; }
+  .filters button { background:var(--panel2); border:1px solid var(--border); color:var(--muted); border-radius:999px; padding:4px 12px; font-size:11px; cursor:pointer; font-weight:600; }
+  .filters button.on { background:rgba(20,241,149,.1); color:var(--green); border-color:var(--green); }
+
+  .news-item { padding:7px 4px; border-bottom:1px solid #121a29; font-size:13px; }
+  .news-item:last-child { border-bottom:none; }
+  .news-item .src { color:var(--purple); font-weight:700; font-size:10.5px; }
+  .news-item time { color:var(--muted); font-size:10.5px; float:right; }
+
+  .upg-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:10px; }
+  .upgrade { background:var(--panel2); border:1px solid var(--border); border-radius:10px; padding:11px; }
+  .status-tag { font-size:9.5px; font-weight:800; text-transform:uppercase; color:var(--gold); letter-spacing:.5px; }
+
+  .src-chip { font-size:11px; padding:4px 10px; border-radius:999px; background:var(--panel2); border:1px solid var(--border); }
+  .src-chip.err { border-color:var(--red); color:var(--red); }
+
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start; }
+  @media(max-width:1000px){ .two-col{grid-template-columns:1fr;} }
+  footer { color:var(--muted); font-size:11px; text-align:center; padding:8px 0 24px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <h1>⚡ Sol<b>Beat</b></h1>
+  <div class="links">
+    <a href="./" class="on">Overview</a>
+    <a href="validators.html">Validators</a>
+    <a href="#trends">Trends</a>
+    <a href="#alerts">Alerts</a>
+    <a href="#news">News</a>
+    <a href="#roadmap">Roadmap</a>
+  </div>
+  <div class="spacer"></div>
+  <span id="livePill"><span class="dot"></span><span style="font-size:11px;color:var(--muted)">LIVE</span></span>
+  <span id="generated" class="sub" style="margin:0"></span>
+  <span id="countdown">60s</span>
+</nav>
+
+<div class="wrap">
+
+  <section id="overview">
+    <h2>Overview <span class="i" title="All metrics collected keyless from public Solana RPC + DeFiLlama + CoinGecko. Hover any ⓘ for methodology.">ⓘ</span></h2>
+    <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section id="trends">
+    <h2>Trends <span class="i" title="History persisted in SQLite at every collection tick. Range buttons change the window; hover the chart for exact values.">ⓘ</span></h2>
+    <div class="charts">
+      <div class="chart-box"><div class="chart-head"><h2 style="margin:0">TPS total</h2>
+        <div class="ranges" data-key="tps_total"><button data-p="60">1h</button><button data-p="360">6h</button><button data-p="1440" class="on">24h+</button><button data-p="2000">all</button></div></div>
+        <svg id="ch_tps_total"></svg><div id="tt_tps_total" class="sub"></div><div id="tooltip"></div></div>
+      <div class="chart-box"><div class="chart-head"><h2 style="margin:0">SOL price USD</h2>
+        <div class="ranges" data-key="sol_price_usd"><button data-p="60">1h</button><button data-p="360">6h</button><button data-p="1440" class="on">24h+</button><button data-p="2000">all</button></div></div>
+        <svg id="ch_sol_price_usd"></svg><div id="tt_sol_price_usd" class="sub"></div></div>
+      <div class="chart-box"><div class="chart-head"><h2 style="margin:0">Median tx fee (microSOL)</h2>
+        <div class="ranges" data-key="median_tx_fee_sol"><button data-p="60">1h</button><button data-p="360">6h</button><button data-p="1440" class="on">24h+</button><button data-p="2000">all</button></div></div>
+        <svg id="ch_median_tx_fee_sol"></svg><div id="tt_median_tx_fee_sol" class="sub"></div></div>
+      <div class="chart-box"><div class="chart-head"><h2 style="margin:0">DeFi TVL USD</h2>
+        <div class="ranges" data-key="defi_tvl_usd"><button data-p="60">1h</button><button data-p="360">6h</button><button data-p="1440" class="on">24h+</button><button data-p="2000">all</button></div></div>
+        <svg id="ch_defi_tvl_usd"></svg><div id="tt_defi_tvl_usd" class="sub"></div></div>
+    </div>
+  </section>
+
+  <section id="alerts">
+    <h2>🚨 Anomalies <span class="i" title="Rules: absolute thresholds (slot time, delinquency) + rolling z-score + cross-source price correlation + move detection vs previous sample. Persisted 3 days.">ⓘ</span></h2>
+    <div class="filters">
+      <button data-lvl="all" class="on">tutti</button>
+      <button data-lvl="crit" class="warncol" style="color:var(--red)">critici</button>
+      <button data-lvl="warn" class="warncol">warning</button>
+    </div>
+    <div id="alertsList" style="max-height:300px;overflow-y:auto"></div>
+  </section>
+
+  <div class="two-col">
+    <section id="news">
+      <h2>📰 Ecosystem news <span class="i" title="RSS/Atom filtered by Solana-related keywords, deduplicated by link hash.">ⓘ</span></h2>
+      <div id="news" style="max-height:280px;overflow-y:auto"></div>
+    </section>
+
+    <section id="roadmap">
+      <h2>🛣️ Upcoming upgrades (curated)</h2>
+      <div class="upg-grid" id="upgrades"></div>
+    </section>
+  </div>
+
+  <section id="sourcesSec">
+    <h2>📡 Source health <span class="i" title="Every collector runs independently with its own interval. A failing source degrades gracefully without affecting the others.">ⓘ</span></h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px" id="sources"></div>
+  </section>
+
+  <footer>SolBeat · pure Python stdlib · SQLite history · zero API keys · zero external deps · <span id="modeTag">live mode</span></footer>
+</div>
+
+<!-- static-hosting payload (GitHub Pages): injected by the Actions workflow -->
+<script src="api.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const fmtUsd = v => v == null ? '—' :
+  Math.abs(v) >= 1e9 ? '$' + (v/1e9).toFixed(2) + 'B' :
+  Math.abs(v) >= 1e6 ? '$' + (v/1e6).toFixed(1) + 'M' : '$' + Math.round(v).toLocaleString('en-US');
+const fmtN = (v,d=0) => v == null ? '—' : Number(v).toLocaleString('en-US',{maximumFractionDigits:d});
+const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const info = t => ` <span class="i" title="${esc(t)}">ⓘ</span>`;
+let REFRESH = 60, lastLoad = Date.now(), payload = null, staticMode = false;
+
+function kpi(label, value, sub, cls, tip) {
+  return `<div class="kpi"><div class="l">${label}${tip ? info(tip) : ''}</div>
+    <div class="v ${cls||''}">${value}</div>${sub ? `<div class="d ${sub.cls||''}">${sub.t}</div>` : ''}</div>`;
+}
+
+function render() {
+  const m = payload.metrics || {};
+  const vs = (payload.derived||{}).validators_summary || {};
+
+  $('generated').textContent = payload.generated_at ? 'upd ' + new Date(payload.generated_at*1000).toLocaleTimeString('it-IT') : 'waiting…';
+  const srcOk = (payload.sources||[]).filter(s=>s.status==='ok').length;
+  $('livePill').innerHTML = `<span class="dot ${srcOk===0?'bad':''}"></span><span style="font-size:11px;color:var(--muted)">${staticMode?'STATIC':'LIVE'} ${srcOk}/${(payload.sources||[]).length}</span>`;
+  $('modeTag').textContent = staticMode ? 'static snapshot (GitHub Pages)' : 'live mode';
+
+  let alertsHtml = '';
+  const critA = (payload.alerts||[]).filter(a=>a.level==='crit').slice(0,1);
+  for (const a of critA) alertsHtml += `<div class="alert-item">🔴 <b>${esc(a.metric)}</b> — ${esc(a.message)}</div>`;
+  if (!$('overview').dataset.bannerDone || $('overview').dataset.bannerKey !== String(critA[0]?.ts||'')) {
+    const old = $('overview').querySelector('.alert-item'); if (old) old.remove();
+    if (critA.length) $('overview').insertAdjacentHTML('afterbegin', alertsHtml);
+    $('overview').dataset.bannerDone = '1';
+    $('overview').dataset.bannerKey = String(critA[0]?.ts||'');
+  }
+
+  const epProg = m.epoch_progress_pct;
+  const etaH = m.epoch_eta_hours;
+  const etaTxt = etaH != null ? (etaH >= 1 ? '~' + etaH.toFixed(1) + 'h' : '~' + Math.round(etaH*60) + 'min') : '—';
+
+  $('kpis').innerHTML =
+    kpi('Epoch #'+fmtN(m.epoch)+' progress',
+        epProg!=null?epProg.toFixed(1)+'%':'—', {t:'ends '+etaTxt, cls:'up'},
+        '', 'Slot-based progress; ETA extrapolated from observed slot pace (getRecentPerformanceSamples).') +
+    `<div class="kpi epoch-card"><div class="l">Epoch bar${info('slotsInEpoch vs current slotIndex')}</div>
+       <div class="v" style="font-size:15px">${fmtN(m.epoch_slots_remaining)} slots left</div>
+       <div class="epoch-bar"><div class="epoch-fill" style="width:${epProg||0}%"></div></div></div>` +
+    kpi('TPS total', fmtN(m.tps_total)) +
+    kpi('TPS non-vote', fmtN(m.tps_non_vote), null, '', 'Excludes consensus/vote transactions — closer to real economic throughput.') +
+    kpi('Avg slot time', m.avg_slot_ms!=null?m.avg_slot_ms.toFixed(0)+'ms':'—', null,
+        m.avg_slot_ms>600?'down':'', 'Healthy pacing ≈400ms. Warn >600ms, critical >1000ms.') +
+    kpi('Median tx fee', m.median_tx_fee_sol!=null?(m.median_tx_fee_sol*1e9).toFixed(0)+' lamports':'—',
+        null, '', 'Actual fees from sampled recent blocks (meta.fee). The brief requires median transaction fees.') +
+    kpi('SOL price', m.sol_price_usd!=null?'$'+m.sol_price_usd.toFixed(2):'—',
+        m.sol_price_change_24h_pct!=null?{t:(m.sol_price_change_24h_pct>=0?'▲ ':'▼ ')+Math.abs(m.sol_price_change_24h_pct).toFixed(1)+'% 24h', cls:m.sol_price_change_24h_pct>=0?'up':'down'}:null,
+        '', 'CoinGecko spot. Cross-checked against Binance below.') +
+    kpi('Price divergence', m.cg_bin_divergence_pct!=null?m.cg_bin_divergence_pct.toFixed(2)+'%':'—',
+        m.binance_sol_price_usd!=null?{t:'Binance $'+m.binance_sol_price_usd.toFixed(2)}:null,
+        m.cg_bin_divergence_pct>=1.5?'warn':'', 'Multi-source correlation: |CoinGecko − Binance| / Binance. Warn >1.5%.') +
+    kpi('Market cap', fmtUsd(m.sol_market_cap_usd)) +
+    kpi('DeFi TVL', fmtUsd(m.defi_tvl_usd), null, '', 'Total value locked on Solana (DeFiLlama).') +
+    kpi('DEX vol 24h', fmtUsd(m.dex_volume_24h_usd)) +
+    kpi('Fees 24h', fmtUsd(m.fees_24h_usd), null, '', 'REV proxy: total chain fees. Exact priority-fee+tips split needs keyed APIs.') +
+    kpi('Revenue 24h', fmtUsd(m.rev_24h_usd), null, '', 'DeFiLlama "revenue" where reported.') +
+    kpi('Stablecoins', fmtUsd(m.stablecoin_supply_usd), null, '', 'USD-pegged supply on Solana (DeFiLlama path endpoint, verified chain-scoped).') +
+    kpi('Validators', `<a href="validators.html" style="color:inherit">${fmtN(vs.active)}<span style="color:var(--muted);font-size:13px"> / </span><span class="${vs.delinquent>0?'down':''}">${fmtN(vs.delinquent)}</span></a>`,
+        null, '', 'Active / delinquent vote accounts. Click for the dedicated validators page.') +
+    kpi('Nakamoto coeff.', fmtN(vs.nakamoto_coefficient), null, '',
+        'Minimum validators controlling ≥34% of stake — decentralization pressure indicator.') +
+    kpi('Top-10 stake', vs.top10_stake_pct!=null?vs.top10_stake_pct.toFixed(1)+'%':'—') +
+    kpi('Jupiter activity', m.jupiter_signatures_per_min!=null?fmtN(m.jupiter_signatures_per_min)+'/min':'—',
+        m.jupiter_tx_lag_slots!=null?{t:'lag '+fmtN(m.jupiter_tx_lag_slots)+' slots'}:null,
+        (m.jupiter_tx_lag_slots||0)>500?'warn':'',
+        'getSignaturesForAddress on the largest DEX aggregator: ecosystem activity freshness.') +
+    kpi('Est. daily addr*', fmtN(m.est_daily_active_addresses),
+        m.fee_sample_txs?{t:'n='+fmtN(m.fee_sample_txs)+' tx'}:null, '',
+        'Estimated from unique fee payers in sampled blocks, scaled to 24h. Statistical estimate, not exact.');
+
+  renderAlerts();
+  renderNews();
+  renderUpgrades();
+  renderSources();
+}
+
+let lvlFilter = 'all';
+function renderAlerts() {
+  const list = (payload.alerts||[]).filter(a => lvlFilter==='all' || a.level===lvlFilter);
+  $('alertsList').innerHTML = list.slice(0,25).map(a=>`
+    <div class="alert-item ${a.level==='warn'?'warn':''}"><time>${new Date(a.ts*1000).toLocaleString('it-IT',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}</time>
+    ${a.level==='crit'?'🔴':'🟡'} <b>${esc(a.metric)}</b> — ${esc(a.message)}</div>`).join('')
+    || '<div class="sub">Nessuna anomalia nel periodo. ✅</div>';
+}
+document.querySelectorAll('#alerts .filters button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('#alerts .filters button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); lvlFilter=b.dataset.lvl; if(payload) renderAlerts();
+});
+
+function renderNews(){
+  $('news').innerHTML=(payload.news||[]).slice(0,15).map(n=>`
+    <div class="news-item"><time>${new Date(n.ts*1000).toLocaleDateString('it-IT')}</time>
+    <span class="src">${esc(n.source)}</span><br><a href="${esc(n.link)}" target="_blank">${esc(n.title)}</a></div>`).join('')
+    || '<div class="news-item">no items yet</div>';
+}
+function renderUpgrades(){
+  $('upgrades').innerHTML=(payload.upgrades||[]).map(u=>`
+    <div class="upgrade"><div class="status-tag">${esc(u.status)}</div>
+    <div style="font-weight:700;margin:4px 0">${esc(u.name)}</div>
+    <div class="sub" style="margin:0">${esc(u.note)}</div></div>`).join('');
+}
+function renderSources(){
+  $('sources').innerHTML=(payload.sources||[]).map(s=>{
+    const age=s.last_ok?Math.round((Date.now()/1000-s.last_ok)/60):null;
+    return `<span class="src-chip ${s.status==='ok'?'':'err'}" title="${esc(s.status)}">${s.status==='ok'?'✅':'❌'} ${esc(s.name)}${age!=null?` · ${age<60?age+'m':Math.round(age/60)+'h'} ago`:''}</span>`;
+  }).join('');
+}
+
+const chartState = {};
+function drawChart(key){
+  const st=chartState[key]; if(!st) return;
+  const svg=$('ch_'+key); if(!svg) return;
+  const pts=st.points;
+  if(!pts||pts.length<2){
+    svg.innerHTML=`<text x="50%" y="50%" fill="#71809b" text-anchor="middle" font-size="12">collecting data…</text>`;
+    return;
+  }
+  const W=600,H=130,P=6;
+  const xs=pts.map(p=>p[0]),ys=pts.map(p=>p[1]);
+  const xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);
+  const vspan=(ymax-ymin)||(ymin||1)*0.02+1;
+  const X=t=>P+(t-xmin)/((xmax-xmin)||1)*(W-2*P);
+  const Y=v=>H-P-((v-ymin)/vspan)*(H-2*P);
+  let d=`M ${X(xs[0]).toFixed(1)} ${Y(ys[0]).toFixed(1)}`;
+  for(let i=1;i<ys.length;i++) d+=` L ${X(xs[i]).toFixed(1)} ${Y(ys[i]).toFixed(1)}`;
+  const area=d+` L ${X(xs[xs.length-1]).toFixed(1)} ${H-P} L ${X(xs[0]).toFixed(1)} ${H-P} Z`;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  svg.innerHTML=`<defs><linearGradient id="g-${key}" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#14f195" stop-opacity=".22"/><stop offset="100%" stop-color="#14f195" stop-opacity="0"/></linearGradient></defs>
+    <path d="${area}" fill="url(#g-${key})"/>
+    <path d="${d}" fill="none" stroke="#14f195" stroke-width="1.7"/>
+    <text x="${P}" y="12" fill="#71809b" font-size="10">${fmtN(ymax,4)}</text>
+    <text x="${P}" y="${H-4}" fill="#71809b" font-size="10">${fmtN(ymin,4)}</text>`;
+  st.X=X; st.Y=Y;
+}
+function attachHover(key){
+  const svg=$('ch_'+key), tt=$('tooltip'), infoEl=$('tt_'+key);
+  if(!svg||svg.dataset.hover) return;
+  svg.dataset.hover='1';
+  svg.addEventListener('mousemove',e=>{
+    const st=chartState[key]; if(!st||!st.points||st.points.length<2) return;
+    const r=svg.getBoundingClientRect();
+    const px=(e.clientX-r.left)/r.width*600;
+    let best=null,bd=1e18;
+    for(const [t,v] of st.points){const dx=Math.abs(st.X(t)-px);if(dx<bd){bd=dx;best=[t,v];}}
+    if(best){
+      tt.style.display='block';
+      tt.textContent=new Date(best[0]).toLocaleTimeString('it-IT')+' · '+fmtN(best[1],6);
+      const boxR=svg.parentElement.getBoundingClientRect();
+      tt.style.left=Math.min(e.clientX-boxR.left+12,boxR.width-120)+'px';
+      tt.style.top=(e.clientY-boxR.top-30)+'px';
+      if(infoEl) infoEl.textContent='hover: '+fmtN(best[1],6)+' @ '+new Date(best[0]).toLocaleString('it-IT');
+    }
+  });
+  svg.addEventListener('mouseleave',()=>{tt.style.display='none';});
+}
+async function loadChart(key, points){
+  if(staticMode){
+    chartState[key]={points:(payload.history_embed||{})[key]||[]};
+    drawChart(key); return;
+  }
+  try{
+    const r=await fetch(`/api/history?key=${key}&points=${points}`);
+    const j=await r.json();
+    chartState[key]={points:j.points}; drawChart(key);
+  }catch{}
+}
+document.querySelectorAll('.ranges').forEach(box=>{
+  box.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{
+    box.querySelectorAll('button').forEach(x=>x.classList.remove('on'));
+    btn.classList.add('on');
+    loadChart(box.dataset.key, btn.dataset.p);
+  });
+});
+
+async function load(){
+  try{
+    const r=await fetch('/api/report');
+    payload=await r.json();
+    staticMode=false;
+    render();
+    ['tps_total','sol_price_usd','median_tx_fee_sol','defi_tvl_usd'].forEach(k=>{
+      const on=document.querySelector(`.ranges[data-key="${k}"] button.on`);
+      loadChart(k,on?on.dataset.p:1440);
+      attachHover(k);
+    });
+  }catch{
+    if(window.__REPORT__){ payload=window.__REPORT__; staticMode=true; render();
+      ['tps_total','sol_price_usd','median_tx_fee_sol','defi_tvl_usd'].forEach(k=>loadChart(k)); }
+  }
+}
+setInterval(()=>{
+  const left=Math.max(0,REFRESH-Math.round((Date.now()-lastLoad)/1000));
+  $('countdown').textContent=left+'s';
+},500);
+load();
+setInterval(()=>{ lastLoad=Date.now(); load(); }, REFRESH*1000);
+</script>
+</body>
+</html>

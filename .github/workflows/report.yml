@@ -1,0 +1,60 @@
+name: solbeat-report
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # hourly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No pip install needed: stdlib only by design.
+      - name: Collect fresh data + regenerate reports
+        run: |
+          python solbeat.py collect
+          python solbeat.py report
+
+      - name: Commit refreshed reports
+        run: |
+          git config user.name "solbeat-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add reports/
+          git diff --cached --quiet || git commit -m "chore: refresh reports [skip ci]"
+          git push
+
+      - name: Build Pages bundle (dashboard + reports)
+        run: |
+          mkdir -p public
+          cp dashboard/index.html public/index.html
+          cp dashboard/validators.html public/validators.html
+          cp reports/report.md public/report.md
+          cp reports/report.json public/report.json
+          # minimal API shim so the hosted dashboard renders without a server
+          cat > public/api.js <<'EOF'
+          window.__REPORT__ = __PAYLOAD__;
+          EOF
+          python - <<'EOF'
+          import json, pathlib
+          payload = pathlib.Path("reports/report.json").read_text(encoding="utf-8")
+          shim = pathlib.Path("public/api.js").read_text(encoding="utf-8")
+          shim = shim.replace("__PAYLOAD__", payload)
+          pathlib.Path("public/api.js").write_text(shim, encoding="utf-8")
+          EOF
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4
