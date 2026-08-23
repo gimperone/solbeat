@@ -1,6 +1,6 @@
-# runtime artifacts (regenerated, never published)
+# runtime artifacts only — reports/ IS tracked on purpose:
+# the Actions workflow regenerates and commits it hourly (published output)
 data/
-reports/
 __pycache__/
 *.pyc
 .DS_Store
