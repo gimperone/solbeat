@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-08-24 20:32 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-08-24 21:31 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,12 +8,12 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 4293 |
-| TPS (non-vote) | 2431 |
-| Avg slot time | 366 ms |
+| TPS (total, ~last min avg) | 3967 |
+| TPS (non-vote) | 2108 |
+| Avg slot time | 367 ms |
 | Median tx fee | 5,000 lamports (0.000005000 SOL) |
-| Slot height | 441,473,536 |
-| Epoch progress | 92.9% (#1021) · ends in ~3.1h |
+| Slot height | 441,483,194 |
+| Epoch progress | 95.2% (#1021) · ends in ~2.12h |
 
 ## 🗳️ Validators
 - Active validators: **686** · Delinquent: **9** (0.02% of stake)
@@ -23,29 +23,29 @@ None detected in the current window. ✅
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 16,984,006 | 7% | 6417172 | active |
-| 2 | HEL1USMZKAL2odpN | 16,032,941 | 0% | 6414179 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,211,671 | 0% | 6417176 | active |
-| 4 | JUPiTERrZqgf1jUy | 11,728,738 | 5% | 6419427 | active |
-| 5 | C8Bey3LKVJHVqN6x | 9,165,202 | 7% | 6417240 | active |
-| 6 | CAo1dCGYrB6NhHh5 | 8,876,408 | 10% | 6413080 | active |
-| 7 | E1r4Psq84tHfQ6aP | 8,480,578 | 0% | 6417259 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,930,731 | 7% | 6419379 | active |
-| 9 | 9eGrDohdNTAo61DR | 7,359,446 | 5% | 6416556 | active |
-| 10 | Awes4Tr6TX8JDzEh | 6,568,551 | 0% | 6414997 | active |
+| 1 | Fd7btgySsrjuo25C | 16,984,006 | 7% | 6571571 | active |
+| 2 | HEL1USMZKAL2odpN | 16,032,941 | 0% | 6568579 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,211,671 | 0% | 6571639 | active |
+| 4 | JUPiTERrZqgf1jUy | 11,728,738 | 5% | 6573920 | active |
+| 5 | C8Bey3LKVJHVqN6x | 9,165,202 | 7% | 6571703 | active |
+| 6 | CAo1dCGYrB6NhHh5 | 8,876,408 | 10% | 6567543 | active |
+| 7 | E1r4Psq84tHfQ6aP | 8,480,578 | 0% | 6571659 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,930,731 | 7% | 6573871 | active |
+| 9 | 9eGrDohdNTAo61DR | 7,359,446 | 5% | 6571019 | active |
+| 10 | Awes4Tr6TX8JDzEh | 6,568,551 | 0% | 6569413 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $95.90 (+0.7% 24h) |
-| Market cap | $55.94B |
+| SOL price | $96.69 (+0.7% 24h) |
+| Market cap | $56.41B |
 | DeFi TVL (Solana) | $5.59B |
 | DEX volume 24h | $2.94B |
 | Chain fees 24h (REV proxy) | $12.7M |
 | Stablecoin supply | $16.37B |
-| SOL circulating supply | 583,275,823 |
-| Est. daily active addresses (sampled)* | 3,274,027 |
-| RWA / tokenized assets TVL* | $9.65B |
+| SOL circulating supply | 583,275,786 |
+| Est. daily active addresses (sampled)* | 3,071,342 |
+| RWA / tokenized assets TVL* | $9.69B |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -66,7 +66,7 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **news**: ok (last success 0 min ago, 10 items)
+- ✅ **news**: ok (last success 0 min ago, 9 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
