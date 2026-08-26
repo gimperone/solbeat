@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-08-26 14:50 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-08-26 16:19 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,44 +8,44 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 4488 |
-| TPS (non-vote) | 2633 |
-| Avg slot time | 367 ms |
+| TPS (total, ~last min avg) | 4604 |
+| TPS (non-vote) | 2740 |
+| Avg slot time | 365 ms |
 | Median tx fee | 5,000 lamports (0.000005000 SOL) |
-| Slot height | 441,890,082 |
-| Epoch progress | 89.4% (#1022) · ends in ~4.69h |
+| Slot height | 441,904,670 |
+| Epoch progress | 92.7% (#1022) · ends in ~3.17h |
 
 ## 🗳️ Validators
-- Active validators: **685** · Delinquent: **10** (0.06% of stake)
+- Active validators: **686** · Delinquent: **9** (0.04% of stake)
 - Total active stake: **435,118,104 SOL** · Median commission: **5%**
 - **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.28%** of stake
-- Commission distribution: 37.1% at 0% · 49.1% at 1-9% · 13.9% at ≥10%
+- Commission distribution: 37.2% at 0% · 49.0% at 1-9% · 13.8% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,066,966 | 7% | 6167764 | active |
-| 2 | HEL1USMZKAL2odpN | 16,035,907 | 0% | 6166791 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,268,330 | 0% | 6167547 | active |
-| 4 | JUPiTERrZqgf1jUy | 11,739,871 | 5% | 6170592 | active |
-| 5 | C8Bey3LKVJHVqN6x | 9,202,562 | 7% | 6167760 | active |
-| 6 | CAo1dCGYrB6NhHh5 | 8,924,729 | 10% | 6167765 | active |
-| 7 | E1r4Psq84tHfQ6aP | 8,579,462 | 0% | 6167766 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,953,722 | 7% | 6170597 | active |
-| 9 | 9eGrDohdNTAo61DR | 7,300,009 | 5% | 6166893 | active |
-| 10 | Awes4Tr6TX8JDzEh | 6,574,676 | 0% | 6165495 | active |
+| 1 | Fd7btgySsrjuo25C | 17,066,966 | 7% | 6400384 | active |
+| 2 | HEL1USMZKAL2odpN | 16,035,907 | 0% | 6399379 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,268,330 | 0% | 6400136 | active |
+| 4 | JUPiTERrZqgf1jUy | 11,739,871 | 5% | 6403443 | active |
+| 5 | C8Bey3LKVJHVqN6x | 9,202,562 | 7% | 6400316 | active |
+| 6 | CAo1dCGYrB6NhHh5 | 8,924,729 | 10% | 6400348 | active |
+| 7 | E1r4Psq84tHfQ6aP | 8,579,462 | 0% | 6400387 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,953,722 | 7% | 6403448 | active |
+| 9 | 9eGrDohdNTAo61DR | 7,300,009 | 5% | 6399514 | active |
+| 10 | Awes4Tr6TX8JDzEh | 6,574,676 | 0% | 6397869 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $95.66 (-2.6% 24h) |
-| Market cap | $55.80B |
-| DeFi TVL (Solana) | $5.59B |
+| SOL price | $95.81 (-2.4% 24h) |
+| Market cap | $55.89B |
+| DeFi TVL (Solana) | $5.57B |
 | DEX volume 24h | $2.93B |
 | Chain fees 24h (REV proxy) | $13.2M |
 | Stablecoin supply | $16.23B |
-| SOL circulating supply | 583,375,054 |
-| Est. daily active addresses (sampled)* | 2,603,836 |
-| RWA / tokenized assets TVL* | $9.86B |
+| SOL circulating supply | 583,374,989 |
+| Est. daily active addresses (sampled)* | 3,166,027 |
+| RWA / tokenized assets TVL* | $9.85B |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -67,8 +67,8 @@ None detected in the current window. ✅
 
 ## 📡 Source health
 - ✅ **news**: ok (last success 0 min ago, 9 items)
-- ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
+- ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **daa**: ok (last success 0 min ago, 5 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
 
