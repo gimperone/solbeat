@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-09-07 03:30 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-09-07 09:04 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,12 +8,12 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 4434 |
-| TPS (non-vote) | 2330 |
-| Avg slot time | 319 ms |
+| TPS (total, ~last min avg) | 3461 |
+| TPS (non-vote) | 1340 |
+| Avg slot time | 316 ms |
 | Median tx fee | 5,000 lamports (0.000005000 SOL) |
-| Slot height | 444,963,381 |
-| Epoch progress | 0.8% (#1030) · ends in ~37.98h |
+| Slot height | 445,026,576 |
+| Epoch progress | 15.4% (#1030) · ends in ~32.13h |
 
 ## 🗳️ Validators
 - Active validators: **675** · Delinquent: **13** (0.03% of stake)
@@ -23,28 +23,28 @@ None detected in the current window. ✅
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,438,541 | 7% | 54015 | active |
-| 2 | HEL1USMZKAL2odpN | 16,336,964 | 0% | 54011 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,517,399 | 0% | 54010 | active |
-| 4 | JUPiTERrZqgf1jUy | 11,397,824 | 5% | 54045 | active |
-| 5 | E1r4Psq84tHfQ6aP | 9,564,412 | 0% | 54011 | active |
-| 6 | C8Bey3LKVJHVqN6x | 9,181,909 | 7% | 54016 | active |
-| 7 | CAo1dCGYrB6NhHh5 | 9,038,443 | 10% | 53965 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,384,461 | 7% | 54045 | active |
-| 9 | 9eGrDohdNTAo61DR | 6,858,929 | 5% | 54016 | active |
-| 10 | Awes4Tr6TX8JDzEh | 6,595,421 | 0% | 54016 | active |
+| 1 | Fd7btgySsrjuo25C | 17,438,541 | 7% | 1065000 | active |
+| 2 | HEL1USMZKAL2odpN | 16,336,964 | 0% | 1064989 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,517,399 | 0% | 1065002 | active |
+| 4 | JUPiTERrZqgf1jUy | 11,397,824 | 5% | 1065098 | active |
+| 5 | E1r4Psq84tHfQ6aP | 9,564,412 | 0% | 1064995 | active |
+| 6 | C8Bey3LKVJHVqN6x | 9,181,909 | 7% | 1065001 | active |
+| 7 | CAo1dCGYrB6NhHh5 | 9,038,443 | 10% | 1064254 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,384,461 | 7% | 1065071 | active |
+| 9 | 9eGrDohdNTAo61DR | 6,858,929 | 5% | 1065001 | active |
+| 10 | Awes4Tr6TX8JDzEh | 6,595,421 | 0% | 1065010 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $105.19 (+0.3% 24h) |
-| Market cap | $61.65B |
+| SOL price | $104.71 (-0.5% 24h) |
+| Market cap | $61.38B |
 | DeFi TVL (Solana) | $5.92B |
 | DEX volume 24h | $1.96B |
 | Chain fees 24h (REV proxy) | $10.5M |
 | Stablecoin supply | $16.65B |
-| SOL circulating supply | 586,166,541 |
-| Est. daily active addresses (sampled)* | 2,676,329 |
+| SOL circulating supply | 586,166,219 |
+| Est. daily active addresses (sampled)* | 2,498,795 |
 | RWA / tokenized assets TVL* | $10.17B |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
@@ -57,6 +57,7 @@ None detected in the current window. ✅
 - [Agave Releases] [Release v4.3.0-beta.2](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-beta.2) _09-07_
 - [Agave Releases] [Release v4.2.1](https://github.com/anza-xyz/agave/releases/tag/v4.2.1) _09-07_
 - [Agave Releases] [Release v4.2.0](https://github.com/anza-xyz/agave/releases/tag/v4.2.0) _09-07_
+- [Cointelegraph] [Fomo overtakes Pump.fun in daily revenue on Solana](https://cointelegraph.com/news/fomo-pumpfun-revenue-app-solana) _09-07_
 
 ## 🛣️ Upcoming upgrades & developments (curated)
 - **Alpenglow** — research/rollout: New consensus protocol replacing TowerBFT+PoH, target ~100-150ms finality. [link](https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana)
@@ -65,7 +66,7 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **news**: ok (last success 0 min ago, 7 items)
+- ✅ **news**: ok (last success 0 min ago, 8 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
