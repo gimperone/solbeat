@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-09-20 23:56 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-09-21 04:13 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,12 +8,12 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 4606 |
-| TPS (non-vote) | 2083 |
+| TPS (total, ~last min avg) | 4200 |
+| TPS (non-vote) | 1677 |
 | Avg slot time | 267 ms |
 | Median tx fee | 5,000 lamports (0.000005000 SOL) |
-| Slot height | 448,886,071 |
-| Epoch progress | 8.8% (#1039) · ends in ~29.18h |
+| Slot height | 448,943,789 |
+| Epoch progress | 22.2% (#1039) · ends in ~24.91h |
 
 ## 🗳️ Validators
 - Active validators: **676** · Delinquent: **14** (0.04% of stake)
@@ -23,41 +23,41 @@ None detected in the current window. ✅
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,856,583 | 7% | 608803 | active |
-| 2 | HEL1USMZKAL2odpN | 15,828,384 | 0% | 608804 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,518,302 | 0% | 608800 | active |
-| 4 | JUPiTERrZqgf1jUy | 11,252,588 | 5% | 608854 | active |
-| 5 | E1r4Psq84tHfQ6aP | 9,788,818 | 0% | 608802 | active |
-| 6 | C8Bey3LKVJHVqN6x | 9,251,354 | 7% | 608804 | active |
-| 7 | CAo1dCGYrB6NhHh5 | 9,106,985 | 10% | 608811 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,443,840 | 7% | 608912 | active |
-| 9 | 9eGrDohdNTAo61DR | 7,088,079 | 5% | 608803 | active |
-| 10 | Awes4Tr6TX8JDzEh | 6,572,007 | 0% | 607544 | active |
+| 1 | Fd7btgySsrjuo25C | 17,856,583 | 7% | 1532108 | active |
+| 2 | HEL1USMZKAL2odpN | 15,828,384 | 0% | 1532110 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,518,302 | 0% | 1532115 | active |
+| 4 | JUPiTERrZqgf1jUy | 11,252,588 | 5% | 1532046 | active |
+| 5 | E1r4Psq84tHfQ6aP | 9,788,818 | 0% | 1532109 | active |
+| 6 | C8Bey3LKVJHVqN6x | 9,251,354 | 7% | 1532107 | active |
+| 7 | CAo1dCGYrB6NhHh5 | 9,106,985 | 10% | 1532136 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,443,840 | 7% | 1532232 | active |
+| 9 | 9eGrDohdNTAo61DR | 7,088,079 | 5% | 1532096 | active |
+| 10 | Awes4Tr6TX8JDzEh | 6,572,007 | 0% | 1529109 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $111.22 (+0.1% 24h) |
-| Market cap | $65.33B |
-| DeFi TVL (Solana) | $6.21B |
-| DEX volume 24h | $2.88B |
-| Chain fees 24h (REV proxy) | $15.3M |
-| Stablecoin supply | $15.72B |
-| SOL circulating supply | 587,437,898 |
-| Est. daily active addresses (sampled)* | 2,757,699 |
+| SOL price | $111.23 (+2.3% 24h) |
+| Market cap | $65.35B |
+| DeFi TVL (Solana) | $6.28B |
+| DEX volume 24h | $2.75B |
+| Chain fees 24h (REV proxy) | $14.4M |
+| Stablecoin supply | $15.82B |
+| SOL circulating supply | 587,437,713 |
+| Est. daily active addresses (sampled)* | 2,797,644 |
 | RWA / tokenized assets TVL* | $2.45B |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
 ## 📰 Ecosystem & community news (auto-filtered)
-- [Agave Releases] [Release v4.3.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1) _09-20_
-- [Agave Releases] [Release v4.4.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.4) _09-20_
-- [Agave Releases] [Release v4.3.0-rc.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.0) _09-20_
-- [Agave Releases] [Release v4.4.0-alpha.3](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.3) _09-20_
-- [Agave Releases] [Release v4.4.0-alpha.2](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.2) _09-20_
-- [Agave Releases] [Release v4.3.0-beta.3](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-beta.3) _09-20_
-- [Agave Releases] [Release v4.2.2](https://github.com/anza-xyz/agave/releases/tag/v4.2.2) _09-20_
-- [Agave Releases] [Release v4.3.0-beta.2](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-beta.2) _09-20_
+- [Agave Releases] [Release v4.3.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1) _09-21_
+- [Agave Releases] [Release v4.4.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.4) _09-21_
+- [Agave Releases] [Release v4.3.0-rc.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.0) _09-21_
+- [Agave Releases] [Release v4.4.0-alpha.3](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.3) _09-21_
+- [Agave Releases] [Release v4.4.0-alpha.2](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.2) _09-21_
+- [Agave Releases] [Release v4.3.0-beta.3](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-beta.3) _09-21_
+- [Agave Releases] [Release v4.2.2](https://github.com/anza-xyz/agave/releases/tag/v4.2.2) _09-21_
+- [Agave Releases] [Release v4.3.0-beta.2](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-beta.2) _09-21_
 
 ## 🛣️ Upcoming upgrades & developments (curated)
 - **Alpenglow** — research/rollout: New consensus protocol replacing TowerBFT+PoH, target ~100-150ms finality. [link](https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana)
@@ -67,9 +67,9 @@ None detected in the current window. ✅
 
 ## 📡 Source health
 - ✅ **news**: ok (last success 0 min ago, 9 items)
-- ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
+- ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **daa**: ok (last success 0 min ago, 5 items)
 
 ---
