@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-09-28 15:03 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-09-28 21:39 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,44 +8,44 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 5019 |
-| TPS (non-vote) | 2517 |
-| Avg slot time | 269 ms |
+| TPS (total, ~last min avg) | 4772 |
+| TPS (non-vote) | 2265 |
+| Avg slot time | 268 ms |
 | Median tx fee | 5,000 lamports (0.000005000 SOL) |
-| Slot height | 451,353,730 |
-| Epoch progress | 80.0% (#1044) · ends in ~6.45h |
+| Slot height | 451,442,220 |
+| Epoch progress | 0.5% (#1045) · ends in ~32.03h |
 
 ## 🗳️ Validators
-- Active validators: **676** · Delinquent: **7** (0.01% of stake)
-- Total active stake: **440,549,807 SOL** · Median commission: **5%**
-- **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.46%** of stake
-- Commission distribution: 33.9% at 0% · 51.5% at 1-9% · 14.6% at ≥10%
+- Active validators: **674** · Delinquent: **8** (0.01% of stake)
+- Total active stake: **441,249,792 SOL** · Median commission: **5%**
+- **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.45%** of stake
+- Commission distribution: 34.1% at 0% · 51.8% at 1-9% · 14.1% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,867,779 | 7% | 5529712 | active |
-| 2 | HEL1USMZKAL2odpN | 15,840,792 | 0% | 5529736 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,330,570 | 0% | 5529853 | active |
-| 4 | JUPiTERrZqgf1jUy | 11,215,732 | 5% | 5529946 | active |
-| 5 | E1r4Psq84tHfQ6aP | 10,838,730 | 0% | 5529746 | active |
-| 6 | C8Bey3LKVJHVqN6x | 9,238,854 | 7% | 5529543 | active |
-| 7 | CAo1dCGYrB6NhHh5 | 9,209,776 | 10% | 5526113 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,623,407 | 7% | 5530135 | active |
-| 9 | 9eGrDohdNTAo61DR | 7,094,526 | 5% | 5528334 | active |
-| 10 | Awes4Tr6TX8JDzEh | 6,511,334 | 0% | 5529319 | active |
+| 1 | Fd7btgySsrjuo25C | 17,824,525 | 7% | 35549 | active |
+| 2 | HEL1USMZKAL2odpN | 15,886,038 | 0% | 35552 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,338,577 | 0% | 35552 | active |
+| 4 | E1r4Psq84tHfQ6aP | 11,300,554 | 0% | 35551 | active |
+| 5 | JUPiTERrZqgf1jUy | 11,209,855 | 5% | 35551 | active |
+| 6 | C8Bey3LKVJHVqN6x | 9,243,744 | 7% | 35545 | active |
+| 7 | CAo1dCGYrB6NhHh5 | 9,224,466 | 10% | 35525 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,637,468 | 7% | 35551 | active |
+| 9 | 9eGrDohdNTAo61DR | 6,700,083 | 5% | 35551 | active |
+| 10 | Awes4Tr6TX8JDzEh | 6,518,407 | 0% | 35551 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $118.15 (-2.9% 24h) |
-| Market cap | $69.44B |
+| SOL price | $118.26 (-3.3% 24h) |
+| Market cap | $69.54B |
 | DeFi TVL (Solana) | $6.55B |
 | DEX volume 24h | $1.93B |
 | Chain fees 24h (REV proxy) | $15.4M |
 | Stablecoin supply | $16.64B |
-| SOL circulating supply | 587,781,935 |
-| Est. daily active addresses (sampled)* | 2,994,411 |
-| RWA / tokenized assets TVL* | $1.51B |
+| SOL circulating supply | 587,853,246 |
+| Est. daily active addresses (sampled)* | 3,066,904 |
+| RWA / tokenized assets TVL* | $1.55B |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -66,8 +66,8 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **news**: ok (last success 0 min ago, 12 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
+- ✅ **news**: ok (last success 0 min ago, 11 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
 - ✅ **daa**: ok (last success 0 min ago, 5 items)
