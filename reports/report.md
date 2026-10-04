@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-10-04 04:51 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-10-04 10:59 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,43 +8,43 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 4133 |
-| TPS (non-vote) | 1630 |
+| TPS (total, ~last min avg) | 4110 |
+| TPS (non-vote) | 1606 |
 | Avg slot time | 267 ms |
-| Median tx fee | 5,001 lamports (0.000005001 SOL) |
-| Slot height | 453,153,885 |
-| Epoch progress | 96.7% (#1048) · ends in ~1.05h |
+| Median tx fee | 5,000 lamports (0.000005000 SOL) |
+| Slot height | 453,236,465 |
+| Epoch progress | 15.8% (#1049) · ends in ~26.94h |
 
 ## 🗳️ Validators
-- Active validators: **671** · Delinquent: **14** (0.04% of stake)
-- Total active stake: **442,013,190 SOL** · Median commission: **5%**
-- **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.53%** of stake
-- Commission distribution: 33.7% at 0% · 51.6% at 1-9% · 14.8% at ≥10%
+- Active validators: **671** · Delinquent: **15** (0.03% of stake)
+- Total active stake: **441,848,823 SOL** · Median commission: **5%**
+- **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.56%** of stake
+- Commission distribution: 34.0% at 0% · 51.6% at 1-9% · 14.5% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,923,954 | 7% | 6681095 | active |
-| 2 | HEL1USMZKAL2odpN | 15,898,894 | 0% | 6681259 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,338,401 | 0% | 6681330 | active |
-| 4 | E1r4Psq84tHfQ6aP | 11,304,108 | 0% | 6681260 | active |
-| 5 | JUPiTERrZqgf1jUy | 11,133,145 | 5% | 6681492 | active |
-| 6 | C8Bey3LKVJHVqN6x | 9,247,324 | 7% | 6679733 | active |
-| 7 | CAo1dCGYrB6NhHh5 | 9,244,926 | 10% | 6676778 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,605,153 | 7% | 6682572 | active |
-| 9 | 9eGrDohdNTAo61DR | 7,060,361 | 5% | 6681486 | active |
-| 10 | JD549HsbJHeEKKUr | 6,684,213 | 0% | 6681158 | active |
+| 1 | Fd7btgySsrjuo25C | 17,935,562 | 7% | 1094835 | active |
+| 2 | HEL1USMZKAL2odpN | 15,927,649 | 0% | 1094843 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,346,574 | 0% | 1094867 | active |
+| 4 | E1r4Psq84tHfQ6aP | 11,305,935 | 0% | 1094844 | active |
+| 5 | JUPiTERrZqgf1jUy | 11,136,537 | 5% | 1094882 | active |
+| 6 | C8Bey3LKVJHVqN6x | 9,254,655 | 7% | 1094659 | active |
+| 7 | CAo1dCGYrB6NhHh5 | 9,241,331 | 10% | 1094253 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,616,097 | 7% | 1095006 | active |
+| 9 | 9eGrDohdNTAo61DR | 7,061,519 | 5% | 1094878 | active |
+| 10 | JD549HsbJHeEKKUr | 6,686,111 | 0% | 1094832 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $120.60 (+1.2% 24h) |
-| Market cap | $70.93B |
-| DeFi TVL (Solana) | $6.68B |
-| DEX volume 24h | $2.13B |
+| SOL price | $121.32 (+1.5% 24h) |
+| Market cap | $71.39B |
+| DeFi TVL (Solana) | $6.70B |
+| DEX volume 24h | $1.55B |
 | Chain fees 24h (REV proxy) | $13.0M |
 | Stablecoin supply | $16.80B |
-| SOL circulating supply | 588,145,310 |
-| Est. daily active addresses (sampled)* | 3,253,315 |
+| SOL circulating supply | 588,216,321 |
+| Est. daily active addresses (sampled)* | 3,007,726 |
 | RWA / tokenized assets TVL* | $1.56B |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
@@ -66,8 +66,8 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **news**: ok (last success 0 min ago, 11 items)
+- ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
 - ✅ **daa**: ok (last success 0 min ago, 5 items)
