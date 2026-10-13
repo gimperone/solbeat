@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-10-12 21:37 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-10-13 02:53 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,56 +8,56 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 4949 |
-| TPS (non-vote) | 1888 |
+| TPS (total, ~last min avg) | 4788 |
+| TPS (non-vote) | 1723 |
 | Avg slot time | 218 ms |
 | Median tx fee | 5,000 lamports (0.000005000 SOL) |
-| Slot height | 456,197,085 |
-| Epoch progress | 1.2% (#1056) · ends in ~25.88h |
+| Slot height | 456,283,899 |
+| Epoch progress | 21.3% (#1056) · ends in ~20.6h |
 
 ## 🗳️ Validators
-- Active validators: **673** · Delinquent: **7** (0.01% of stake)
+- Active validators: **671** · Delinquent: **9** (0.05% of stake)
 - Total active stake: **438,790,522 SOL** · Median commission: **5%**
 - **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.55%** of stake
-- Commission distribution: 34.5% at 0% · 51.1% at 1-9% · 14.4% at ≥10%
+- Commission distribution: 34.3% at 0% · 51.3% at 1-9% · 14.5% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,789,243 | 7% | 81290 | active |
-| 2 | HEL1USMZKAL2odpN | 15,958,932 | 0% | 81302 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,305,752 | 0% | 81305 | active |
-| 4 | E1r4Psq84tHfQ6aP | 11,149,129 | 0% | 81302 | active |
-| 5 | JUPiTERrZqgf1jUy | 10,758,268 | 5% | 81304 | active |
-| 6 | CAo1dCGYrB6NhHh5 | 9,401,788 | 10% | 81293 | active |
-| 7 | C8Bey3LKVJHVqN6x | 9,237,163 | 7% | 81220 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,681,229 | 7% | 81308 | active |
-| 9 | 9eGrDohdNTAo61DR | 6,812,456 | 5% | 81308 | active |
-| 10 | JD549HsbJHeEKKUr | 6,638,148 | 0% | 81307 | active |
+| 1 | Fd7btgySsrjuo25C | 17,789,243 | 7% | 1468117 | active |
+| 2 | HEL1USMZKAL2odpN | 15,958,932 | 0% | 1468063 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,305,752 | 0% | 1468066 | active |
+| 4 | E1r4Psq84tHfQ6aP | 11,149,129 | 0% | 1468049 | active |
+| 5 | JUPiTERrZqgf1jUy | 10,758,268 | 5% | 1468148 | active |
+| 6 | CAo1dCGYrB6NhHh5 | 9,401,788 | 10% | 1468161 | active |
+| 7 | C8Bey3LKVJHVqN6x | 9,237,163 | 7% | 1466684 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,681,229 | 7% | 1468181 | active |
+| 9 | 9eGrDohdNTAo61DR | 6,812,456 | 5% | 1468179 | active |
+| 10 | JD549HsbJHeEKKUr | 6,638,148 | 0% | 1468141 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $108.15 (-2.0% 24h) |
-| Market cap | $63.71B |
-| DeFi TVL (Solana) | $6.10B |
-| DEX volume 24h | $1.28B |
-| Chain fees 24h (REV proxy) | $11.3M |
-| Stablecoin supply | $16.27B |
-| SOL circulating supply | 589,163,554 |
-| Est. daily active addresses (sampled)* | 2,762,137 |
+| SOL price | $106.43 (-5.0% 24h) |
+| Market cap | $62.68B |
+| DeFi TVL (Solana) | $5.97B |
+| DEX volume 24h | $1.87B |
+| Chain fees 24h (REV proxy) | $12.1M |
+| Stablecoin supply | $16.15B |
+| SOL circulating supply | 589,163,109 |
+| Est. daily active addresses (sampled)* | 2,568,329 |
 | RWA / tokenized assets TVL* | $1.63B |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
 ## 📰 Ecosystem & community news (auto-filtered)
-- [Agave Releases] [Release v4.5.0-alpha.2](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.2) _10-12_
-- [Agave Releases] [Release v4.5.0-alpha.1](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.1) _10-12_
-- [Agave Releases] [Release v4.4.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.0) _10-12_
-- [Agave Releases] [Release v4.4.0-alpha.5](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.5) _10-12_
-- [Agave Releases] [Release v4.3.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0) _10-12_
-- [Agave Releases] [Release v4.3.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1) _10-12_
-- [Agave Releases] [Release v4.4.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.4) _10-12_
-- [Agave Releases] [Release v4.3.0-rc.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.0) _10-12_
+- [Agave Releases] [Release v4.5.0-alpha.2](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.2) _10-13_
+- [Agave Releases] [Release v4.5.0-alpha.1](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.1) _10-13_
+- [Agave Releases] [Release v4.4.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.0) _10-13_
+- [Agave Releases] [Release v4.4.0-alpha.5](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.5) _10-13_
+- [Agave Releases] [Release v4.3.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0) _10-13_
+- [Agave Releases] [Release v4.3.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1) _10-13_
+- [Agave Releases] [Release v4.4.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.4) _10-13_
+- [Agave Releases] [Release v4.3.0-rc.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.0) _10-13_
 
 ## 🛣️ Upcoming upgrades & developments (curated)
 - **Alpenglow** — research/rollout: New consensus protocol replacing TowerBFT+PoH, target ~100-150ms finality. [link](https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana)
@@ -66,11 +66,11 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **news**: ok (last success 0 min ago, 10 items)
+- ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
-- ✅ **daa**: ok (last success 0 min ago, 5 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
+- ✅ **daa**: ok (last success 0 min ago, 5 items)
 
 ---
 _Generated by [SolBeat](https://github.com/) — pure Python stdlib, zero API keys._
