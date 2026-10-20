@@ -1,374 +1,374 @@
 {
   "schema_version": "1.1",
-  "generated_at": 1792487900.4632442,
+  "generated_at": 1792507621.3384037,
   "metrics": {
-    "defi_tvl_usd": 5887986120.4131975,
+    "defi_tvl_usd": 5883753388.357978,
     "stablecoin_supply_usd": 15849195233.55,
-    "dex_volume_24h_usd": 1610948501.83,
-    "fees_24h_usd": 11944527.99,
-    "rwa_tvl_usd": 962835163.1990844,
-    "sol_price_usd": 103.92,
-    "sol_price_change_24h_pct": -1.5545576144668358,
-    "sol_market_cap_usd": 61260369167.61354,
-    "slot": 459177605,
-    "epoch": 1062,
-    "epoch_progress_pct": 91.11,
-    "block_height": 437212675,
+    "dex_volume_24h_usd": 1823579289.83,
+    "fees_24h_usd": 11986038.75,
+    "rwa_tvl_usd": 963889264.3375351,
+    "sol_price_usd": 107.44,
+    "sol_price_change_24h_pct": 3.2963875210975657,
+    "sol_market_cap_usd": 63340419180.76412,
+    "slot": 459268208,
+    "epoch": 1063,
+    "epoch_progress_pct": 12.08,
+    "block_height": 437303237,
     "slots_in_epoch": 432000,
-    "tps_total": 4818.0,
-    "tps_non_vote": 1763.7,
-    "avg_slot_ms": 217.7,
-    "sol_total_supply": 636089662.44,
-    "sol_circulating_supply": 589493113.8,
+    "tps_total": 5615.2,
+    "tps_non_vote": 2569.6,
+    "avg_slot_ms": 218.4,
+    "sol_total_supply": 636151998.53,
+    "sol_circulating_supply": 589549697.48,
     "rpc_health": 1.0,
-    "slot_source_divergence": 25,
+    "slot_source_divergence": 24,
     "jupiter_tx_lag_slots": 0,
     "jupiter_signatures_per_min": 6000.0,
-    "validators_active": 665,
-    "validators_delinquent": 14,
-    "delinquent_stake_pct": 0.151,
+    "validators_active": 668,
+    "validators_delinquent": 11,
+    "delinquent_stake_pct": 0.002,
     "nakamoto_coefficient": 19,
-    "top10_stake_pct": 24.27,
-    "commission_0_pct": 34.1,
-    "commission_high_pct": 14.6,
-    "epoch_slots_remaining": 38395,
-    "epoch_eta_hours": 2.32,
-    "collected_at": 1792487899.8021157,
-    "fee_sample_txs": 11235,
+    "top10_stake_pct": 24.35,
+    "commission_0_pct": 34.3,
+    "commission_high_pct": 14.2,
+    "epoch_slots_remaining": 379792,
+    "epoch_eta_hours": 23.04,
+    "collected_at": 1792507608.8448763,
+    "fee_sample_txs": 7729,
     "fee_sample_blocks": 6,
-    "est_daily_active_addresses": 2824274,
-    "median_tx_fee_sol": 5.004e-06,
-    "mean_tx_fee_sol": 4.9636e-05
+    "est_daily_active_addresses": 2997370,
+    "median_tx_fee_sol": 5e-06,
+    "mean_tx_fee_sol": 1.9762e-05
   },
   "validators": [
     {
       "name": "Fd7btgySsrjuo25C",
       "vote_pubkey": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
-      "activated_stake_sol": 17095415,
+      "activated_stake_sol": 17103015,
       "commission": 7,
-      "epoch_credit_current": 6294122,
+      "epoch_credit_current": 834936,
       "delinquent": false,
       "stake_share_pct": 100.0
     },
     {
       "name": "HEL1USMZKAL2odpN",
       "vote_pubkey": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
-      "activated_stake_sol": 15730365,
+      "activated_stake_sol": 15937532,
       "commission": 0,
-      "epoch_credit_current": 6290046,
+      "epoch_credit_current": 835036,
       "delinquent": false,
-      "stake_share_pct": 92.02
+      "stake_share_pct": 93.19
     },
     {
       "name": "DRpbCBMxVnDK7maP",
       "vote_pubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
-      "activated_stake_sol": 12524168,
+      "activated_stake_sol": 12537315,
       "commission": 0,
-      "epoch_credit_current": 6294215,
+      "epoch_credit_current": 835049,
       "delinquent": false,
-      "stake_share_pct": 73.26
+      "stake_share_pct": 73.3
     },
     {
       "name": "E1r4Psq84tHfQ6aP",
       "vote_pubkey": "8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD",
-      "activated_stake_sol": 10975836,
+      "activated_stake_sol": 10930434,
       "commission": 0,
-      "epoch_credit_current": 6292166,
+      "epoch_credit_current": 835044,
       "delinquent": false,
-      "stake_share_pct": 64.2
+      "stake_share_pct": 63.91
     },
     {
       "name": "JUPiTERrZqgf1jUy",
       "vote_pubkey": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
-      "activated_stake_sol": 9717890,
+      "activated_stake_sol": 9717707,
       "commission": 5,
-      "epoch_credit_current": 6294472,
+      "epoch_credit_current": 835111,
       "delinquent": false,
-      "stake_share_pct": 56.85
+      "stake_share_pct": 56.82
     },
     {
       "name": "CAo1dCGYrB6NhHh5",
       "vote_pubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
-      "activated_stake_sol": 9481609,
+      "activated_stake_sol": 9482037,
       "commission": 10,
-      "epoch_credit_current": 6293786,
+      "epoch_credit_current": 834413,
       "delinquent": false,
-      "stake_share_pct": 55.46
+      "stake_share_pct": 55.44
     },
     {
       "name": "C8Bey3LKVJHVqN6x",
       "vote_pubkey": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
-      "activated_stake_sol": 9252107,
+      "activated_stake_sol": 9253756,
       "commission": 7,
-      "epoch_credit_current": 6293020,
+      "epoch_credit_current": 834970,
       "delinquent": false,
-      "stake_share_pct": 54.12
+      "stake_share_pct": 54.11
     },
     {
       "name": "EvnRmnMrd69kFdbL",
       "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
-      "activated_stake_sol": 7785119,
+      "activated_stake_sol": 7792210,
       "commission": 7,
-      "epoch_credit_current": 6293464,
+      "epoch_credit_current": 835113,
       "delinquent": false,
-      "stake_share_pct": 45.54
+      "stake_share_pct": 45.56
     },
     {
       "name": "9eGrDohdNTAo61DR",
       "vote_pubkey": "CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB",
-      "activated_stake_sol": 6993888,
+      "activated_stake_sol": 7034138,
       "commission": 5,
-      "epoch_credit_current": 6294305,
+      "epoch_credit_current": 834273,
       "delinquent": false,
-      "stake_share_pct": 40.91
+      "stake_share_pct": 41.13
     },
     {
       "name": "Awes4Tr6TX8JDzEh",
       "vote_pubkey": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
-      "activated_stake_sol": 6731556,
+      "activated_stake_sol": 7000331,
       "commission": 0,
-      "epoch_credit_current": 6289499,
+      "epoch_credit_current": 834503,
       "delinquent": false,
-      "stake_share_pct": 39.38
+      "stake_share_pct": 40.93
     },
     {
       "name": "JD549HsbJHeEKKUr",
       "vote_pubkey": "3JD3jMmnR6g88qff2WZ3cMHJRjJMUk9yVZtmYTYeFrXf",
-      "activated_stake_sol": 6602168,
+      "activated_stake_sol": 6602960,
       "commission": 0,
-      "epoch_credit_current": 6293642,
+      "epoch_credit_current": 835090,
       "delinquent": false,
-      "stake_share_pct": 38.62
+      "stake_share_pct": 38.61
     },
     {
       "name": "5pPRHniefFjkiaAr",
       "vote_pubkey": "DdCNGDpP7qMgoAy6paFzhhak2EeyCZcgjH7ak5u5v28m",
-      "activated_stake_sol": 5986464,
+      "activated_stake_sol": 5986828,
       "commission": 5,
-      "epoch_credit_current": 6294474,
+      "epoch_credit_current": 835112,
       "delinquent": false,
-      "stake_share_pct": 35.02
+      "stake_share_pct": 35.0
     },
     {
       "name": "5Cchr1XGEg7dbBXB",
       "vote_pubkey": "GHViLgbrJdZDPb6sphRbeuPNM9cmjsFuGWzrTF1sKF5n",
-      "activated_stake_sol": 5672980,
+      "activated_stake_sol": 5677980,
       "commission": 100,
-      "epoch_credit_current": 6291679,
+      "epoch_credit_current": 834981,
       "delinquent": false,
-      "stake_share_pct": 33.18
+      "stake_share_pct": 33.2
     },
     {
       "name": "GnC339vkyXRm1jRX",
       "vote_pubkey": "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk",
-      "activated_stake_sol": 4871506,
+      "activated_stake_sol": 4855235,
       "commission": 7,
-      "epoch_credit_current": 6292860,
+      "epoch_credit_current": 835112,
       "delinquent": false,
-      "stake_share_pct": 28.5
+      "stake_share_pct": 28.39
     },
     {
       "name": "9rkJMARqK6VBkcxG",
       "vote_pubkey": "HimWQUK61d9wxhw7EYu9jUje7xQiDs4jKexaTSvuCmXE",
-      "activated_stake_sol": 4712904,
+      "activated_stake_sol": 4713524,
       "commission": 8,
-      "epoch_credit_current": 6293622,
+      "epoch_credit_current": 834984,
       "delinquent": false,
-      "stake_share_pct": 27.57
+      "stake_share_pct": 27.56
     },
     {
       "name": "9jxgosAfHgHzwnxs",
       "vote_pubkey": "HZKopZYvv8v6un2H6KUNVQCnK5zM9emKKezvqhTBSpEc",
       "activated_stake_sol": 4612429,
       "commission": 100,
-      "epoch_credit_current": 6294102,
+      "epoch_credit_current": 835111,
       "delinquent": false,
-      "stake_share_pct": 26.98
+      "stake_share_pct": 26.97
     },
     {
       "name": "Fc6NNdS2j3EmrWbU",
       "vote_pubkey": "2tucttroqFNXsrYeMBQ8LfzKNfgwT2rHBzAF6RzbbHEp",
-      "activated_stake_sol": 4360894,
+      "activated_stake_sol": 4360780,
       "commission": 5,
-      "epoch_credit_current": 6293403,
+      "epoch_credit_current": 834981,
       "delinquent": false,
-      "stake_share_pct": 25.51
+      "stake_share_pct": 25.5
     },
     {
       "name": "FNKgX9dYUhYQFRTM",
       "vote_pubkey": "AaVsZUEnrHUZoXC2oVgTY3GF5GGhzCTBGrjpBtuUWy1H",
-      "activated_stake_sol": 4176066,
+      "activated_stake_sol": 4180281,
       "commission": 8,
-      "epoch_credit_current": 6294470,
+      "epoch_credit_current": 835107,
       "delinquent": false,
-      "stake_share_pct": 24.43
+      "stake_share_pct": 24.44
     },
     {
       "name": "EkvdKhULbMFqjKBK",
       "vote_pubkey": "3ZYJxzCeweSoh2Jj7oCgencFs9y27iKmXJeqYapje1cj",
-      "activated_stake_sol": 4116726,
+      "activated_stake_sol": 4113037,
       "commission": 100,
-      "epoch_credit_current": 6294162,
+      "epoch_credit_current": 835095,
       "delinquent": false,
-      "stake_share_pct": 24.08
-    },
-    {
-      "name": "BtsmiEEvnSuUnKxq",
-      "vote_pubkey": "G9x1mqewTeVnXLmv3FamYD5tq1AdS395RHH3MLQPj6TY",
-      "activated_stake_sol": 4069214,
-      "commission": 100,
-      "epoch_credit_current": 6294440,
-      "delinquent": false,
-      "stake_share_pct": 23.8
+      "stake_share_pct": 24.05
     },
     {
       "name": "FBKFWadXZJahGtFi",
       "vote_pubkey": "AZoCYB4VgoM9DR9f1ZFcBn8xPSbtbqoxZnKJR7tkvEoX",
-      "activated_stake_sol": 4064432,
+      "activated_stake_sol": 4067207,
       "commission": 100,
-      "epoch_credit_current": 6294139,
+      "epoch_credit_current": 835087,
       "delinquent": false,
-      "stake_share_pct": 23.77
+      "stake_share_pct": 23.78
+    },
+    {
+      "name": "BtsmiEEvnSuUnKxq",
+      "vote_pubkey": "G9x1mqewTeVnXLmv3FamYD5tq1AdS395RHH3MLQPj6TY",
+      "activated_stake_sol": 4063225,
+      "commission": 100,
+      "epoch_credit_current": 835108,
+      "delinquent": false,
+      "stake_share_pct": 23.76
     },
     {
       "name": "5ZqveVffQPiUbkjB",
       "vote_pubkey": "EcEowA4GKDsdVBF9PNAZa6c9M4WgYG8y4GnpZSUaqioS",
-      "activated_stake_sol": 4047228,
+      "activated_stake_sol": 4049557,
       "commission": 100,
-      "epoch_credit_current": 6294479,
+      "epoch_credit_current": 835109,
       "delinquent": false,
-      "stake_share_pct": 23.67
+      "stake_share_pct": 23.68
     },
     {
       "name": "A1vqhA2fS6K7CvHs",
       "vote_pubkey": "HkFuE9NJahP7uA8RooXtp64UQb7XNUMVisWsJTgx3far",
-      "activated_stake_sol": 3950487,
+      "activated_stake_sol": 3950254,
       "commission": 100,
-      "epoch_credit_current": 6294467,
+      "epoch_credit_current": 835109,
       "delinquent": false,
-      "stake_share_pct": 23.11
+      "stake_share_pct": 23.1
     },
     {
       "name": "Hz5aLvpKScNWoe9Y",
       "vote_pubkey": "H74qox1GASBWd94FWMyy6GVAbRVLf9SAMgbJ1tzSUAst",
-      "activated_stake_sol": 3945447,
+      "activated_stake_sol": 3945521,
       "commission": 100,
-      "epoch_credit_current": 6294462,
+      "epoch_credit_current": 835102,
       "delinquent": false,
-      "stake_share_pct": 23.08
+      "stake_share_pct": 23.07
     },
     {
       "name": "87CcUxpyR72ZyfaZ",
       "vote_pubkey": "8Pep3GmYiijRALqrMKpez92cxvF4YPTzoZg83uXh14pW",
-      "activated_stake_sol": 3837973,
+      "activated_stake_sol": 3836522,
       "commission": 0,
-      "epoch_credit_current": 6294419,
+      "epoch_credit_current": 834729,
       "delinquent": false,
-      "stake_share_pct": 22.45
+      "stake_share_pct": 22.43
     }
   ],
   "epoch": {
-    "number": 1062,
-    "progress_pct": 91.11,
-    "eta_hours": 2.32,
-    "slots_remaining": 38395
+    "number": 1063,
+    "progress_pct": 12.08,
+    "eta_hours": 23.04,
+    "slots_remaining": 379792
   },
   "derived": {
     "node_version": "?.?.?",
     "validators_summary": {
-      "active": 665,
-      "delinquent": 14,
-      "activated_stake_sol": 437880622,
-      "delinquent_stake_pct": 0.151,
+      "active": 668,
+      "delinquent": 11,
+      "activated_stake_sol": 438577211,
+      "delinquent_stake_pct": 0.002,
       "median_commission": 5,
       "nakamoto_coefficient": 19,
-      "top10_stake_pct": 24.27,
-      "commission_0_pct": 34.1,
-      "commission_low_pct": 51.3,
-      "commission_high_pct": 14.6
+      "top10_stake_pct": 24.35,
+      "commission_0_pct": 34.3,
+      "commission_low_pct": 51.5,
+      "commission_high_pct": 14.2
     }
   },
   "alerts": [],
   "news": [
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.3.2",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.3.2",
       "summary": "<p>This a stable release suitable for Testnet, Devnet and Mainnet Beta.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.3/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.3/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<li>v4.3: ci: ignore RUSTSEC-2026-0292 (imbl-sized-chunks) i"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.4.0-beta.1",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.1",
       "summary": "<p>This is a testnet release.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<li>v4.4: validator: Swallow identity not found error during wait (backport of <a class=\"issue-link js"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.5.0-alpha.2",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.2",
       "summary": "<p>This is a pre-release for testing only. Do not deploy to mainnet, testnet, or any production host.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel\">https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel</a></p>\n<h2>What's Changed</h2>\n<ul>\n"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.5.0-alpha.1",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.1",
       "summary": "<p>This is a pre-release for testing only. Do not deploy to mainnet, testnet, or any production host.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel\">https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel</a></p>\n<h2>What's Changed</h2>\n<ul>\n"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.4.0-beta.0",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.0",
       "summary": "<p>This is a testnet release.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.4/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<li>chore(consensus_pool): remove <code>DebugIgnore</code> in <code>ParentReadyTracker</code> by <a cl"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.4.0-alpha.5",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.5",
       "summary": "<p>This is a pre-release for testing only. Do not deploy to mainnet, testnet, or any production host.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel\">https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel</a></p>"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.3.0",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.3.0",
       "summary": "<p>This a stable release suitable for Testnet, Devnet and Mainnet Beta.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.3/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.3/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<li>v4.3: cli: add vote-update-commission-bps command (backp"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.3.0-rc.1",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1",
       "summary": "<p>This is Mainnet-beta Upgrade Candidate release recommended for 25% adoption.<br>\nIt is also recommended for Testnet and Devnet.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.3/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.3/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.4.0-alpha.4",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.4",
       "summary": "<p>This is a pre-release for testing only. Do not deploy to mainnet, testnet, or any production host.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel\">https://github.com/anza-xyz/agave/blob/master/CHANGELOG.md#edge-channel</a></p>"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Agave Releases",
       "title": "Release v4.3.0-rc.0",
       "link": "https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.0",
       "summary": "<p>This is Mainnet-beta Upgrade Candidate release recommended for 10% adoption.<br>\nIt is also recommended for Testnet and Devnet.</p>\n<p><a href=\"https://github.com/anza-xyz/agave/blob/v4.3/CHANGELOG.md\">https://github.com/anza-xyz/agave/blob/v4.3/CHANGELOG.md</a></p>\n<h2>What's Changed</h2>\n<ul>\n<"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Cointelegraph",
       "title": "BlackRock files for third Bitcoin ETF, still no Solana or XRP",
       "link": "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit",
       "summary": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M5C39B3JZZVK92X4QK4F6ZY6/bitcoin-etf-blackrock.jpg\" alt=\"BlackRock files for third Bitcoin ETF, still no Solana or XRP\" class=\"type:primaryImage\"></p><p>BlackRock\u2019s propos"
     },
     {
-      "ts": 1792487895.339677,
+      "ts": 1792507603.5099356,
       "source": "Cointelegraph",
       "title": "Solana treasury firm SkyAI sells all SOL holdings, launches $201M buyback",
       "link": "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback",
@@ -404,31 +404,31 @@
   "sources": [
     {
       "name": "news",
-      "last_ok": 1792487895.3414676,
+      "last_ok": 1792507603.5112164,
       "status": "ok",
       "items": 12
     },
     {
       "name": "defillama",
-      "last_ok": 1792487895.4768724,
+      "last_ok": 1792507603.8451965,
       "status": "ok",
       "items": 5
     },
     {
       "name": "coingecko",
-      "last_ok": 1792487898.498708,
+      "last_ok": 1792507606.9966633,
       "status": "ok",
       "items": 3
     },
     {
       "name": "rpc",
-      "last_ok": 1792487899.8021681,
+      "last_ok": 1792507608.8449106,
       "status": "ok",
       "items": 24
     },
     {
       "name": "daa",
-      "last_ok": 1792487900.4617047,
+      "last_ok": 1792507621.329681,
       "status": "ok",
       "items": 5
     }
