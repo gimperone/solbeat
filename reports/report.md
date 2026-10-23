@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-10-23 13:10 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-10-23 18:09 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,44 +8,44 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 1779 |
-| TPS (non-vote) | 1779 |
-| Avg slot time | 211 ms |
-| Median tx fee | 5,001 lamports (0.000005001 SOL) |
-| Slot height | 460,454,990 |
-| Epoch progress | 86.8% (#1065) · ends in ~3.35h |
+| TPS (total, ~last min avg) | 2024 |
+| TPS (non-vote) | 2024 |
+| Avg slot time | 212 ms |
+| Median tx fee | 5,000 lamports (0.000005000 SOL) |
+| Slot height | 460,539,753 |
+| Epoch progress | 6.4% (#1066) · ends in ~23.75h |
 
 ## 🗳️ Validators
-- Active validators: **655** · Delinquent: **21** (0.35% of stake)
-- Total active stake: **438,318,925 SOL** · Median commission: **5%**
-- **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.38%** of stake
-- Commission distribution: 33.7% at 0% · 51.6% at 1-9% · 14.7% at ≥10%
+- Active validators: **664** · Delinquent: **14** (0.07% of stake)
+- Total active stake: **437,116,782 SOL** · Median commission: **5%**
+- **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.44%** of stake
+- Commission distribution: 34.2% at 0% · 51.4% at 1-9% · 14.5% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,133,144 | 7% | 2109492186371 | active |
-| 2 | HEL1USMZKAL2odpN | 15,968,621 | 0% | 1970125964733 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,556,096 | 0% | 1536436109200 | active |
-| 4 | E1r4Psq84tHfQ6aP | 10,936,237 | 0% | 1337312098126 | active |
-| 5 | JUPiTERrZqgf1jUy | 9,726,420 | 5% | 1215370970490 | active |
-| 6 | CAo1dCGYrB6NhHh5 | 9,476,174 | 10% | 1185861581584 | active |
-| 7 | C8Bey3LKVJHVqN6x | 9,244,629 | 7% | 1150779978027 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,797,559 | 7% | 959701767710 | active |
-| 9 | 9eGrDohdNTAo61DR | 7,036,293 | 5% | 871092088576 | active |
-| 10 | Awes4Tr6TX8JDzEh | 7,002,101 | 0% | 872942699728 | active |
+| 1 | Fd7btgySsrjuo25C | 17,096,230 | 7% | 153133736796 | active |
+| 2 | HEL1USMZKAL2odpN | 16,022,778 | 0% | 130752721339 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,572,396 | 0% | 109990233777 | active |
+| 4 | E1r4Psq84tHfQ6aP | 10,882,511 | 0% | 95912543117 | active |
+| 5 | JUPiTERrZqgf1jUy | 9,724,046 | 5% | 84697645655 | active |
+| 6 | CAo1dCGYrB6NhHh5 | 9,478,407 | 10% | 83371153979 | active |
+| 7 | C8Bey3LKVJHVqN6x | 9,213,418 | 7% | 79015104216 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,782,539 | 7% | 67714269335 | active |
+| 9 | 9eGrDohdNTAo61DR | 7,037,301 | 5% | 65603653377 | active |
+| 10 | Awes4Tr6TX8JDzEh | 7,003,145 | 0% | 60537380368 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $104.20 (-0.0% 24h) |
-| Market cap | $61.44B |
+| SOL price | $104.30 (+0.8% 24h) |
+| Market cap | $61.49B |
 | DeFi TVL (Solana) | $5.86B |
 | DEX volume 24h | $2.04B |
 | Chain fees 24h (REV proxy) | $11.3M |
 | Stablecoin supply | $15.89B |
-| SOL circulating supply | 589,653,230 |
-| Est. daily active addresses (sampled)* | 2,809,479 |
-| RWA / tokenized assets TVL* | $962.8M |
+| SOL circulating supply | 589,709,096 |
+| Est. daily active addresses (sampled)* | 2,711,836 |
+| RWA / tokenized assets TVL* | $963.0M |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -66,8 +66,8 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
+- ✅ **news**: ok (last success 0 min ago, 11 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
-- ✅ **news**: ok (last success 0 min ago, 12 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **daa**: ok (last success 0 min ago, 5 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
