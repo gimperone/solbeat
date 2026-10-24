@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-10-24 00:20 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-10-24 05:29 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,44 +8,44 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 1768 |
-| TPS (non-vote) | 1768 |
+| TPS (total, ~last min avg) | 1463 |
+| TPS (non-vote) | 1463 |
 | Avg slot time | 212 ms |
-| Median tx fee | 5,005 lamports (0.000005005 SOL) |
-| Slot height | 460,644,643 |
-| Epoch progress | 30.7% (#1066) · ends in ~17.67h |
+| Median tx fee | 5,000 lamports (0.000005000 SOL) |
+| Slot height | 460,731,940 |
+| Epoch progress | 50.9% (#1066) · ends in ~12.49h |
 
 ## 🗳️ Validators
 - Active validators: **664** · Delinquent: **14** (0.07% of stake)
 - Total active stake: **437,116,782 SOL** · Median commission: **5%**
 - **Nakamoto coefficient: 19** validators to reach 34% stake · Top-10 hold **24.44%** of stake
-- Commission distribution: 34.2% at 0% · 51.4% at 1-9% · 14.5% at ≥10%
+- Commission distribution: 33.9% at 0% · 51.4% at 1-9% · 14.8% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,096,230 | 7% | 754734121236 | active |
-| 2 | HEL1USMZKAL2odpN | 16,022,778 | 0% | 689846324157 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,572,396 | 0% | 546153327697 | active |
-| 4 | E1r4Psq84tHfQ6aP | 10,882,511 | 0% | 484337643185 | active |
-| 5 | JUPiTERrZqgf1jUy | 9,724,046 | 5% | 423669525963 | active |
-| 6 | CAo1dCGYrB6NhHh5 | 9,478,407 | 10% | 401072492209 | active |
-| 7 | C8Bey3LKVJHVqN6x | 9,213,418 | 7% | 399301238459 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,782,539 | 7% | 339289612077 | active |
-| 9 | 9eGrDohdNTAo61DR | 7,037,301 | 5% | 304489504890 | active |
-| 10 | Awes4Tr6TX8JDzEh | 7,003,145 | 0% | 299956773201 | active |
+| 1 | Fd7btgySsrjuo25C | 17,096,230 | 7% | 1257258322176 | active |
+| 2 | HEL1USMZKAL2odpN | 16,022,778 | 0% | 1139876682274 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,572,396 | 0% | 903354689313 | active |
+| 4 | E1r4Psq84tHfQ6aP | 10,882,511 | 0% | 798335644273 | active |
+| 5 | JUPiTERrZqgf1jUy | 9,724,046 | 5% | 701190069461 | active |
+| 6 | CAo1dCGYrB6NhHh5 | 9,478,407 | 10% | 671017249925 | active |
+| 7 | C8Bey3LKVJHVqN6x | 9,213,418 | 7% | 672777539776 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,782,539 | 7% | 564120253151 | active |
+| 9 | 9eGrDohdNTAo61DR | 7,037,301 | 5% | 507396320092 | active |
+| 10 | Awes4Tr6TX8JDzEh | 7,003,145 | 0% | 506997899462 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $102.38 (-1.1% 24h) |
-| Market cap | $60.38B |
-| DeFi TVL (Solana) | $5.81B |
-| DEX volume 24h | $2.04B |
-| Chain fees 24h (REV proxy) | $11.5M |
-| Stablecoin supply | $15.89B |
-| SOL circulating supply | 589,708,921 |
-| Est. daily active addresses (sampled)* | 2,842,027 |
-| RWA / tokenized assets TVL* | $962.3M |
+| SOL price | $102.17 (-1.9% 24h) |
+| Market cap | $60.28B |
+| DeFi TVL (Solana) | $5.80B |
+| DEX volume 24h | $2.02B |
+| Chain fees 24h (REV proxy) | $10.5M |
+| Stablecoin supply | $15.85B |
+| SOL circulating supply | 589,708,834 |
+| Est. daily active addresses (sampled)* | 2,523,945 |
+| RWA / tokenized assets TVL* | $962.4M |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -66,8 +66,8 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **news**: ok (last success 0 min ago, 11 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
+- ✅ **news**: ok (last success 0 min ago, 11 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **daa**: ok (last success 0 min ago, 5 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
