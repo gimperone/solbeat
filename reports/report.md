@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-11-06 02:01 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-11-06 10:29 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,44 +8,44 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 1867 |
-| TPS (non-vote) | 1867 |
+| TPS (total, ~last min avg) | 1222 |
+| TPS (non-vote) | 1222 |
 | Avg slot time | 214 ms |
 | Median tx fee | 5,000 lamports (0.000005000 SOL) |
-| Slot height | 465,933,623 |
-| Epoch progress | 55.0% (#1078) · ends in ~11.55h |
+| Slot height | 466,076,283 |
+| Epoch progress | 88.0% (#1078) · ends in ~3.08h |
 
 ## 🗳️ Validators
-- Active validators: **662** · Delinquent: **32** (0.14% of stake)
+- Active validators: **662** · Delinquent: **32** (0.15% of stake)
 - Total active stake: **430,872,482 SOL** · Median commission: **5%**
 - **Nakamoto coefficient: 18** validators to reach 34% stake · Top-10 hold **24.74%** of stake
-- Commission distribution: 33.7% at 0% · 51.5% at 1-9% · 14.8% at ≥10%
+- Commission distribution: 33.8% at 0% · 51.4% at 1-9% · 14.8% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | Fd7btgySsrjuo25C | 17,063,613 | 7% | 1334512502946 | active |
-| 2 | HEL1USMZKAL2odpN | 16,736,546 | 0% | 1333858070346 | active |
-| 3 | DRpbCBMxVnDK7maP | 13,020,024 | 0% | 1026946311560 | active |
-| 4 | E1r4Psq84tHfQ6aP | 10,434,901 | 0% | 838999875248 | active |
-| 5 | JUPiTERkf97eKN22 | 9,530,733 | 5% | 758201788751 | active |
-| 6 | 7jtWrBuj9k2E5Rno | 9,459,109 | 10% | 759165646040 | active |
-| 7 | C8Bey3LKVJHVqN6x | 9,222,692 | 7% | 715723838780 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,860,096 | 7% | 615182218157 | active |
-| 9 | Awes4Tr6TX8JDzEh | 6,991,477 | 0% | 554754343185 | active |
-| 10 | JD549HsbJHeEKKUr | 6,293,076 | 0% | 500533569217 | active |
+| 1 | Fd7btgySsrjuo25C | 17,063,613 | 7% | 2143353587505 | active |
+| 2 | HEL1USMZKAL2odpN | 16,736,546 | 0% | 2122680422866 | active |
+| 3 | DRpbCBMxVnDK7maP | 13,020,024 | 0% | 1644089928216 | active |
+| 4 | E1r4Psq84tHfQ6aP | 10,434,901 | 0% | 1343515303767 | active |
+| 5 | JUPiTERkf97eKN22 | 9,530,733 | 5% | 1212598496341 | active |
+| 6 | 7jtWrBuj9k2E5Rno | 9,459,109 | 10% | 1201479337543 | active |
+| 7 | C8Bey3LKVJHVqN6x | 9,222,692 | 7% | 1163119266176 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,860,096 | 7% | 996703396292 | active |
+| 9 | Awes4Tr6TX8JDzEh | 6,991,477 | 0% | 876436524727 | active |
+| 10 | JD549HsbJHeEKKUr | 6,293,076 | 0% | 799675606411 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $90.14 (-6.1% 24h) |
-| Market cap | $53.19B |
-| DeFi TVL (Solana) | $5.28B |
+| SOL price | $90.06 (-6.9% 24h) |
+| Market cap | $53.16B |
+| DeFi TVL (Solana) | $5.30B |
 | DEX volume 24h | $2.18B |
 | Chain fees 24h (REV proxy) | $9.8M |
 | Stablecoin supply | $15.08B |
-| SOL circulating supply | 590,287,364 |
-| Est. daily active addresses (sampled)* | 2,383,397 |
-| RWA / tokenized assets TVL* | $926.4M |
+| SOL circulating supply | 590,287,242 |
+| Est. daily active addresses (sampled)* | 2,444,055 |
+| RWA / tokenized assets TVL* | $942.0M |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -56,7 +56,6 @@ None detected in the current window. ✅
 - [Agave Releases] [Release v4.3.2](https://github.com/anza-xyz/agave/releases/tag/v4.3.2) _11-06_
 - [Agave Releases] [Release v4.4.0-beta.1](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.1) _11-06_
 - [Agave Releases] [Release v4.5.0-alpha.2](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.2) _11-06_
-- [Agave Releases] [Release v4.5.0-alpha.1](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.1) _11-06_
 
 ## 🛣️ Upcoming upgrades & developments (curated)
 - **Alpenglow** — research/rollout: New consensus protocol replacing TowerBFT+PoH, target ~100-150ms finality. [link](https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana)
@@ -65,7 +64,7 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **news**: ok (last success 0 min ago, 7 items)
+- ✅ **news**: ok (last success 0 min ago, 6 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **daa**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
