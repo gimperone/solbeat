@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-11-12 01:20 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-11-12 09:25 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,44 +8,44 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 1892 |
-| TPS (non-vote) | 1892 |
+| TPS (total, ~last min avg) | 1205 |
+| TPS (non-vote) | 1205 |
 | Avg slot time | 215 ms |
 | Median tx fee | 5,000 lamports (0.000005000 SOL) |
-| Slot height | 468,338,883 |
-| Epoch progress | 11.8% (#1084) · ends in ~22.76h |
+| Slot height | 468,474,293 |
+| Epoch progress | 43.1% (#1084) · ends in ~14.65h |
 
 ## 🗳️ Validators
-- Active validators: **661** · Delinquent: **37** (0.16% of stake)
+- Active validators: **660** · Delinquent: **38** (0.16% of stake)
 - Total active stake: **433,416,361 SOL** · Median commission: **5%**
 - **Nakamoto coefficient: 18** validators to reach 34% stake · Top-10 hold **24.48%** of stake
-- Commission distribution: 33.7% at 0% · 51.4% at 1-9% · 14.8% at ≥10%
+- Commission distribution: 33.8% at 0% · 51.5% at 1-9% · 14.7% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | HEL1USMZKAL2odpN | 16,789,054 | 0% | 286002115333 | active |
-| 2 | Fd7btgySsrjuo25C | 16,119,194 | 7% | 284032133789 | active |
-| 3 | DRpbCBMxVnDK7maP | 13,026,247 | 0% | 225990365706 | active |
-| 4 | E1r4Psq84tHfQ6aP | 10,116,092 | 0% | 168995941162 | active |
-| 5 | 7jtWrBuj9k2E5Rno | 9,681,376 | 10% | 166317387650 | active |
-| 6 | JUPiTERkf97eKN22 | 9,580,180 | 5% | 162360368681 | active |
-| 7 | C8Bey3LKVJHVqN6x | 9,230,504 | 7% | 148880831028 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,840,792 | 7% | 137458872260 | active |
-| 9 | Awes4Tr6TX8JDzEh | 6,987,981 | 0% | 114709267208 | active |
-| 10 | 9eGrDohdNTAo61DR | 6,730,421 | 5% | 108508445129 | active |
+| 1 | HEL1USMZKAL2odpN | 16,789,054 | 0% | 1050837717485 | active |
+| 2 | Fd7btgySsrjuo25C | 16,119,194 | 7% | 1020532413454 | active |
+| 3 | DRpbCBMxVnDK7maP | 13,026,247 | 0% | 810282941568 | active |
+| 4 | E1r4Psq84tHfQ6aP | 10,116,092 | 0% | 606619811285 | active |
+| 5 | 7jtWrBuj9k2E5Rno | 9,681,376 | 10% | 610649750015 | active |
+| 6 | JUPiTERkf97eKN22 | 9,580,180 | 5% | 603810078518 | active |
+| 7 | C8Bey3LKVJHVqN6x | 9,230,504 | 7% | 566910754131 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,840,792 | 7% | 488584657869 | active |
+| 9 | Awes4Tr6TX8JDzEh | 6,987,981 | 0% | 415071226821 | active |
+| 10 | 9eGrDohdNTAo61DR | 6,730,421 | 5% | 410755936794 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $83.15 (+0.3% 24h) |
-| Market cap | $49.14B |
-| DeFi TVL (Solana) | $5.08B |
-| DEX volume 24h | $1.37B |
-| Chain fees 24h (REV proxy) | $8.7M |
-| Stablecoin supply | $14.16B |
-| SOL circulating supply | 591,457,101 |
-| Est. daily active addresses (sampled)* | 2,593,479 |
-| RWA / tokenized assets TVL* | $936.8M |
+| SOL price | $82.69 (-0.5% 24h) |
+| Market cap | $48.91B |
+| DeFi TVL (Solana) | $5.04B |
+| DEX volume 24h | $1.64B |
+| Chain fees 24h (REV proxy) | $9.3M |
+| Stablecoin supply | $14.15B |
+| SOL circulating supply | 591,456,984 |
+| Est. daily active addresses (sampled)* | 2,575,726 |
+| RWA / tokenized assets TVL* | $936.9M |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -65,8 +65,8 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **news**: ok (last success 0 min ago, 7 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
+- ✅ **news**: ok (last success 0 min ago, 7 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **daa**: ok (last success 0 min ago, 5 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
