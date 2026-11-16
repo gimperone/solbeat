@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-11-16 00:49 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-11-16 07:43 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,44 +8,44 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 1738 |
-| TPS (non-vote) | 1738 |
+| TPS (total, ~last min avg) | 1312 |
+| TPS (non-vote) | 1312 |
 | Avg slot time | 215 ms |
 | Median tx fee | n/a |
-| Slot height | 469,936,308 |
-| Epoch progress | 81.5% (#1087) · ends in ~4.76h |
+| Slot height | 470,052,001 |
+| Epoch progress | 8.3% (#1088) · ends in ~23.63h |
 
 ## 🗳️ Validators
-- Active validators: **662** · Delinquent: **38** (0.08% of stake)
-- Total active stake: **429,328,621 SOL** · Median commission: **5%**
+- Active validators: **662** · Delinquent: **37** (0.04% of stake)
+- Total active stake: **429,145,034 SOL** · Median commission: **5%**
 - **Nakamoto coefficient: 18** validators to reach 34% stake · Top-10 hold **24.77%** of stake
-- Commission distribution: 33.2% at 0% · 51.8% at 1-9% · 15.0% at ≥10%
+- Commission distribution: 33.4% at 0% · 51.8% at 1-9% · 14.8% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | HEL1USMZKAL2odpN | 16,927,749 | 0% | 2009538866978 | active |
-| 2 | Fd7btgySsrjuo25C | 16,404,544 | 7% | 1911362787486 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,614,561 | 0% | 1478414245129 | active |
-| 4 | E1r4Psq84tHfQ6aP | 10,141,932 | 0% | 1192359451373 | active |
-| 5 | 7jtWrBuj9k2E5Rno | 9,754,208 | 10% | 1126422138973 | active |
-| 6 | JUPiTERkf97eKN22 | 9,640,656 | 5% | 1108293395677 | active |
-| 7 | C8Bey3LKVJHVqN6x | 9,204,466 | 7% | 1087297883209 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,943,264 | 7% | 932561717330 | active |
-| 9 | Awes4Tr6TX8JDzEh | 6,991,232 | 0% | 829839467546 | active |
-| 10 | 9eGrDohdNTAo61DR | 6,708,648 | 5% | 787982311701 | active |
+| 1 | HEL1USMZKAL2odpN | 16,936,855 | 0% | 203987057084 | active |
+| 2 | Fd7btgySsrjuo25C | 16,432,361 | 7% | 197377481919 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,486,687 | 0% | 152135199885 | active |
+| 4 | E1r4Psq84tHfQ6aP | 10,142,842 | 0% | 122588767992 | active |
+| 5 | 7jtWrBuj9k2E5Rno | 9,787,748 | 10% | 122118230870 | active |
+| 6 | JUPiTERkf97eKN22 | 9,620,150 | 5% | 120434245666 | active |
+| 7 | C8Bey3LKVJHVqN6x | 9,212,350 | 7% | 110623955486 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,959,108 | 7% | 99608164813 | active |
+| 9 | Awes4Tr6TX8JDzEh | 6,992,227 | 0% | 82352579215 | active |
+| 10 | 9eGrDohdNTAo61DR | 6,709,566 | 5% | 79785792923 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $71.90 (+3.0% 24h) |
-| Market cap | $42.52B |
-| DeFi TVL (Solana) | $4.73B |
-| DEX volume 24h | $1.60B |
-| Chain fees 24h (REV proxy) | $7.9M |
-| Stablecoin supply | $14.15B |
-| SOL circulating supply | 591,628,927 |
+| SOL price | $71.50 (+2.3% 24h) |
+| Market cap | $42.30B |
+| DeFi TVL (Solana) | $4.70B |
+| DEX volume 24h | $1.54B |
+| Chain fees 24h (REV proxy) | $7.3M |
+| Stablecoin supply | $14.26B |
+| SOL circulating supply | 591,684,550 |
 | Est. daily active addresses | n/a |
-| RWA / tokenized assets TVL* | $932.1M |
+| RWA / tokenized assets TVL* | $931.6M |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -66,9 +66,9 @@ None detected in the current window. ✅
 
 ## 📡 Source health
 - ✅ **news**: ok (last success 0 min ago, 7 items)
+- ❌ **daa**: error: block sampling inconclusive this round: {'fee_sample_txs': 0, 'fee_sample_blocks': 0} (last success 0 min ago, 0 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
-- ❌ **daa**: error: block sampling inconclusive this round: {'fee_sample_txs': 0, 'fee_sample_blocks': 0} (last success 0 min ago, 0 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
 
 ---
