@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-11-17 20:35 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-11-18 02:46 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,12 +8,12 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 1948 |
-| TPS (non-vote) | 1948 |
+| TPS (total, ~last min avg) | 2013 |
+| TPS (non-vote) | 2013 |
 | Avg slot time | 216 ms |
 | Median tx fee | n/a |
-| Slot height | 470,669,501 |
-| Epoch progress | 51.3% (#1089) · ends in ~12.63h |
+| Slot height | 470,772,742 |
+| Epoch progress | 75.2% (#1089) · ends in ~6.43h |
 
 ## 🗳️ Validators
 - Active validators: **661** · Delinquent: **5** (0.01% of stake)
@@ -23,41 +23,41 @@ None detected in the current window. ✅
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | HEL1USMZKAL2odpN | 16,834,343 | 0% | 1262065736038 | active |
-| 2 | Fd7btgySsrjuo25C | 16,442,668 | 7% | 1219945430497 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,432,778 | 0% | 936386804364 | active |
-| 4 | E1r4Psq84tHfQ6aP | 10,144,846 | 0% | 735696743758 | active |
-| 5 | 7jtWrBuj9k2E5Rno | 9,802,677 | 10% | 720438234899 | active |
-| 6 | JUPiTERkf97eKN22 | 9,625,021 | 5% | 719086735108 | active |
-| 7 | C8Bey3LKVJHVqN6x | 9,218,745 | 7% | 672045539597 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,970,891 | 7% | 593398773202 | active |
-| 9 | Awes4Tr6TX8JDzEh | 6,996,288 | 0% | 507188700448 | active |
-| 10 | 9eGrDohdNTAo61DR | 6,730,472 | 5% | 506994144931 | active |
+| 1 | HEL1USMZKAL2odpN | 16,834,343 | 0% | 1848802983363 | active |
+| 2 | Fd7btgySsrjuo25C | 16,442,668 | 7% | 1781606304838 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,432,778 | 0% | 1373791618264 | active |
+| 4 | E1r4Psq84tHfQ6aP | 10,144,846 | 0% | 1072476633176 | active |
+| 5 | 7jtWrBuj9k2E5Rno | 9,802,677 | 10% | 1053904067885 | active |
+| 6 | JUPiTERkf97eKN22 | 9,625,021 | 5% | 1049726815203 | active |
+| 7 | C8Bey3LKVJHVqN6x | 9,218,745 | 7% | 985883511962 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,970,891 | 7% | 877802441636 | active |
+| 9 | Awes4Tr6TX8JDzEh | 6,996,288 | 0% | 742992784372 | active |
+| 10 | 9eGrDohdNTAo61DR | 6,730,472 | 5% | 736755154918 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $73.08 (+2.5% 24h) |
-| Market cap | $43.21B |
-| DeFi TVL (Solana) | $4.72B |
-| DEX volume 24h | $1.48B |
+| SOL price | $74.48 (+4.0% 24h) |
+| Market cap | $44.08B |
+| DeFi TVL (Solana) | $4.82B |
+| DEX volume 24h | $1.50B |
 | Chain fees 24h (REV proxy) | $8.3M |
-| Stablecoin supply | $14.26B |
-| SOL circulating supply | 591,739,587 |
+| Stablecoin supply | $13.89B |
+| SOL circulating supply | 591,739,468 |
 | Est. daily active addresses | n/a |
-| RWA / tokenized assets TVL* | $861.8M |
+| RWA / tokenized assets TVL* | $851.1M |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
 ## 📰 Ecosystem & community news (auto-filtered)
-- [Agave Releases] [Release v4.5.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-beta.0) _11-17_
-- [Agave Releases] [Release v4.4.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0) _11-17_
-- [Agave Releases] [Release v4.5.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.4) _11-17_
-- [Agave Releases] [Release v4.4.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-rc.1) _11-17_
-- [Agave Releases] [Release v4.3.2](https://github.com/anza-xyz/agave/releases/tag/v4.3.2) _11-17_
-- [Agave Releases] [Release v4.4.0-beta.1](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.1) _11-17_
-- [Agave Releases] [Release v4.5.0-alpha.2](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.2) _11-17_
-- [Cointelegraph] [Solana Foundation takes majority interest in crypto data firm CoinGecko](https://cointelegraph.com/news/coingecko-solana-foundation-majority-stake) _11-17_
+- [Agave Releases] [Release v4.5.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-beta.0) _11-18_
+- [Agave Releases] [Release v4.4.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0) _11-18_
+- [Agave Releases] [Release v4.5.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.4) _11-18_
+- [Agave Releases] [Release v4.4.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-rc.1) _11-18_
+- [Agave Releases] [Release v4.3.2](https://github.com/anza-xyz/agave/releases/tag/v4.3.2) _11-18_
+- [Agave Releases] [Release v4.4.0-beta.1](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.1) _11-18_
+- [Agave Releases] [Release v4.5.0-alpha.2](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.2) _11-18_
+- [Cointelegraph] [Solana Foundation takes majority interest in crypto data firm CoinGecko](https://cointelegraph.com/news/coingecko-solana-foundation-majority-stake) _11-18_
 
 ## 🛣️ Upcoming upgrades & developments (curated)
 - **Alpenglow** — research/rollout: New consensus protocol replacing TowerBFT+PoH, target ~100-150ms finality. [link](https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana)
@@ -66,11 +66,11 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **news**: ok (last success 0 min ago, 10 items)
+- ✅ **news**: ok (last success 0 min ago, 9 items)
+- ❌ **daa**: error: block sampling inconclusive this round: {'fee_sample_txs': 0, 'fee_sample_blocks': 0} (last success 0 min ago, 0 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
-- ❌ **daa**: error: block sampling inconclusive this round: {'fee_sample_txs': 0, 'fee_sample_blocks': 0} (last success 0 min ago, 0 items)
 
 ---
 _Generated by [SolBeat](https://github.com/) — pure Python stdlib, zero API keys._
