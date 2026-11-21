@@ -1,6 +1,6 @@
 # SolBeat — Solana Ecosystem Report
 
-_Auto-generated on 2026-11-21 09:20 UTC. All data collected keyless from public APIs._
+_Auto-generated on 2026-11-21 17:09 UTC. All data collected keyless from public APIs._
 
 ## 🚨 Active anomalies (0 critical, 0 warnings)
 None detected in the current window. ✅
@@ -8,44 +8,44 @@ None detected in the current window. ✅
 ## ⚡ Network performance
 | Metric | Value |
 |---|---|
-| TPS (total, ~last min avg) | 1165 |
-| TPS (non-vote) | 1165 |
+| TPS (total, ~last min avg) | 1656 |
+| TPS (non-vote) | 1656 |
 | Avg slot time | 215 ms |
 | Median tx fee | n/a |
-| Slot height | 472,086,509 |
-| Epoch progress | 79.3% (#1092) · ends in ~5.34h |
+| Slot height | 472,217,595 |
+| Epoch progress | 9.6% (#1093) · ends in ~23.34h |
 
 ## 🗳️ Validators
-- Active validators: **662** · Delinquent: **23** (0.02% of stake)
-- Total active stake: **428,985,797 SOL** · Median commission: **5%**
-- **Nakamoto coefficient: 18** validators to reach 34% stake · Top-10 hold **24.81%** of stake
-- Commission distribution: 33.1% at 0% · 52.0% at 1-9% · 15.0% at ≥10%
+- Active validators: **661** · Delinquent: **24** (0.02% of stake)
+- Total active stake: **428,316,392 SOL** · Median commission: **5%**
+- **Nakamoto coefficient: 18** validators to reach 34% stake · Top-10 hold **24.85%** of stake
+- Commission distribution: 33.3% at 0% · 52.0% at 1-9% · 14.7% at ≥10%
 
 | # | Validator | Stake (SOL) | Commission | Credits (epoch) | Status |
 |---|---|---|---|---|---|
-| 1 | HEL1USMZKAL2odpN | 17,041,638 | 0% | 1921468760337 | active |
-| 2 | Fd7btgySsrjuo25C | 16,354,101 | 7% | 1865622843108 | active |
-| 3 | DRpbCBMxVnDK7maP | 12,422,891 | 0% | 1409100755760 | active |
-| 4 | E1r4Psq84tHfQ6aP | 10,309,121 | 0% | 1183950041781 | active |
-| 5 | 7jtWrBuj9k2E5Rno | 9,779,397 | 10% | 1118755931491 | active |
-| 6 | JUPiTERkf97eKN22 | 9,564,403 | 5% | 1092270510901 | active |
-| 7 | C8Bey3LKVJHVqN6x | 9,231,683 | 7% | 1057703584736 | active |
-| 8 | EvnRmnMrd69kFdbL | 7,986,182 | 7% | 917199772973 | active |
-| 9 | Awes4Tr6TX8JDzEh | 6,985,765 | 0% | 804743782392 | active |
-| 10 | 9eGrDohdNTAo61DR | 6,773,182 | 5% | 782460596791 | active |
+| 1 | HEL1USMZKAL2odpN | 17,043,671 | 0% | 241818179347 | active |
+| 2 | Fd7btgySsrjuo25C | 16,329,817 | 7% | 224341853005 | active |
+| 3 | DRpbCBMxVnDK7maP | 12,412,620 | 0% | 172619087578 | active |
+| 4 | E1r4Psq84tHfQ6aP | 10,241,724 | 0% | 149355382915 | active |
+| 5 | 7jtWrBuj9k2E5Rno | 9,826,793 | 10% | 133715042553 | active |
+| 6 | JUPiTERkf97eKN22 | 9,616,961 | 5% | 131565435139 | active |
+| 7 | C8Bey3LKVJHVqN6x | 9,237,166 | 7% | 126096024451 | active |
+| 8 | EvnRmnMrd69kFdbL | 7,985,737 | 7% | 110272164613 | active |
+| 9 | Awes4Tr6TX8JDzEh | 6,985,063 | 0% | 89844195777 | active |
+| 10 | 9eGrDohdNTAo61DR | 6,774,154 | 5% | 92950875312 | active |
 
 ## 💹 Economic indicators
 | Metric | Value |
 |---|---|
-| SOL price | $67.67 (-6.3% 24h) |
-| Market cap | $40.06B |
-| DeFi TVL (Solana) | $4.52B |
-| DEX volume 24h | $1.84B |
-| Chain fees 24h (REV proxy) | $9.0M |
+| SOL price | $70.66 (+2.3% 24h) |
+| Market cap | $41.83B |
+| DeFi TVL (Solana) | $4.60B |
+| DEX volume 24h | $1.88B |
+| Chain fees 24h (REV proxy) | $8.3M |
 | Stablecoin supply | $13.18B |
-| SOL circulating supply | 591,906,333 |
+| SOL circulating supply | 591,961,743 |
 | Est. daily active addresses | n/a |
-| RWA / tokenized assets TVL* | $693.2M |
+| RWA / tokenized assets TVL* | $691.5M |
 
 \* Methodology notes in README.md (sampling-based estimates, keyless data only).
 
@@ -65,10 +65,10 @@ None detected in the current window. ✅
 - **Agave v2.x** — mainnet: Anza's maintained validator client; ongoing scheduling/priority-fee market improvements. [link](https://github.com/anza-xyz/agave)
 
 ## 📡 Source health
-- ✅ **news**: ok (last success 0 min ago, 7 items)
-- ❌ **daa**: error: block sampling inconclusive this round: {'fee_sample_txs': 0, 'fee_sample_blocks': 0} (last success 0 min ago, 0 items)
 - ✅ **defillama**: ok (last success 0 min ago, 5 items)
+- ✅ **news**: ok (last success 0 min ago, 7 items)
 - ✅ **coingecko**: ok (last success 0 min ago, 3 items)
+- ❌ **daa**: error: block sampling inconclusive this round: {'fee_sample_txs': 0, 'fee_sample_blocks': 0} (last success 0 min ago, 0 items)
 - ✅ **rpc**: ok (last success 0 min ago, 24 items)
 
 ---
